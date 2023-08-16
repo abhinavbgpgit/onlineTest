@@ -11,7 +11,7 @@ const Register = () => {
         <div className="login_left ">
             <div className="blury" ></div>
         <div className="new_user_text">Already existing User ?</div>
-          <Button className='button_register' variant="primary"><Link to='/login' >Please Login</Link></Button>
+          <Button className='button_register' variant="primary"><Link to='/' >Please Login</Link></Button>
             </div>          
         <div className="login_right"></div>
       </div>
