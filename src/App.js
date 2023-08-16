@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
+import Home from './pages/home/Home';
+
 
 function App() {
   return (
-    <div className="App">
-  <h1> Online Exam System</h1>
+    <div>
+   
+<Routes>
 
-  <h2> I think your git pull worked !!!</h2>
-    </div>
+<Route path='/' element={<Login/>}></Route>
+  <Route  path='/home' element={<Home/>}></Route>
+  <Route path='/register' element={<Register/>}></Route>
+</Routes>
+ </div>
   );
 }
 
