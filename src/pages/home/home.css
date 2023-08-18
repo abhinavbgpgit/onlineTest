@@ -1,0 +1,51 @@
+.home_main
+{
+    height: 90vh;
+    width: 100%;
+    background-image: url("/src/images/background.jpg");
+}
+.home_left
+{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+.home_right
+{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(10, 44, 152); */
+    flex-direction: column;
+    gap: 40px;
+}
+.free_test_card
+{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(18, 66, 143);;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 44px;
+    cursor: pointer;
+    color: white;
+}
+.free_test_card:hover
+{
+    background-color: rgb(9, 42, 95);
+}
+
+.subscription_card
+{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(18, 66, 143);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 44px;
+    color: white;
+    cursor: pointer;
+}
+.subscription_card:hover
+{
+    background-color: rgb(9, 42, 95);
+}

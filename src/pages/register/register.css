@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
    
 }
 
@@ -15,7 +16,7 @@
 {
     width: 30%;
 	min-width: 400px;
-    height: 90vh;    
+    height: 80vh;    
     background-color: bisque; 
     border-radius: 20px;   
     border: 3px solid white;
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -80px;
 }
 
 .register_left
@@ -83,4 +85,11 @@
 .shadow-text
 {
 	text-shadow: 4px 2px 3px #a4abc3;
+}
+
+.register_right
+{
+    width: 60%;
+    height: 100vh;
+    /* background-color: green; */
 }

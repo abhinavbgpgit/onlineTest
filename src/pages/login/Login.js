@@ -17,7 +17,12 @@ const Login = () => {
   return (
     <div className="login_top ">
       {/* <Link to='/register'>go to register pages</Link> */}
-
+      <div className="register_right">
+      <div className='flex items-center justify-center flex-col mt-48 m-0'>
+  <div className='font-bold text-9xl text-rose-500 heading'>Online </div>
+  <div className='font-bold text-5xl text-cyan-900 phy'> Test Series Portal</div>
+  </div>
+        </div>
       <div className="login_main">
         <div className="login_left ">
        <div className="login_text_up font-bold text-6xl mb-5 text-white shadow-text">Login</div>

@@ -7,13 +7,17 @@ const Register = () => {
   return (
     <div className="register_top ">
       {/* <Link to='/register'>go to register pages</Link> */}
-
+      <div className="register_right">
+      <div className='flex items-center justify-center flex-col mt-48 m-0'>
+  <div className='font-bold text-9xl text-rose-500 heading'>Online </div>
+  <div className='font-bold text-5xl text-cyan-900 phy'> Test Series Portal</div>
+  </div>
+        </div>
       <div className="register_main">
         <div className="register_left ">
        <div className="register_text_up font-bold text-6xl mb-5 text-white shadow-text">register</div>
           <div className="blury"></div>
-          <FcBusinessman className="user_icon" />
-          <div className="form">
+                   <div className="form">
             <div className="form-control w-full max-w-xs ">
               <label className="label">
                 <span className="label-text text-white font-semibold ">
@@ -66,6 +70,7 @@ const Register = () => {
           </div>
           
         </div>
+       
       </div>
     </div>
   )

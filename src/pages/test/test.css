@@ -1,0 +1,54 @@
+.test_main
+{
+    height: 90vh;
+    width: 100%;
+    background-image: url("/src/images/background.jpg");
+}
+.test_left
+{
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+}
+.test_right
+{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(10, 44, 152); */
+    flex-wrap: wrap;
+    gap: 40px;
+    /* border: 3px solid; */
+    padding: 60px;
+    overflow-y: scroll;
+}
+.test_card
+{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(120, 170, 208);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(5, 31, 63);
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .test_card:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+    background-color: white;
+    color: rgb(18, 66, 143);
+} */
+.test_no
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;
+    margin-top: -25px;
+    border-radius: 10px 10px 0px 0px ;
+    text-align: center;
+    color: rgb(8, 62, 120);
+    font-weight: 700;
+}
