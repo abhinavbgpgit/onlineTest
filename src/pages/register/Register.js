@@ -8,7 +8,7 @@ const Register = () => {
     <div className="register_top ">
       {/* <Link to='/register'>go to register pages</Link> */}
       <div className="register_right">
-      <div className='flex items-center justify-center flex-col mt-48 m-0'>
+      <div className='flex items-center justify-center flex-col '>
   <div className='font-bold text-9xl text-rose-500 heading'>Online </div>
   <div className='font-bold text-5xl text-cyan-900 phy'> Test Series Portal</div>
   </div>
@@ -27,7 +27,7 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Enter your Email"
-                className="input  input-sm input-bordered w-80 "
+                className="input  input-sm input-bordered w-80 rounded-lg"
               />
             </div>
             <div className="form-control w-full max-w-xs mt-1">
@@ -39,7 +39,7 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Enter your Name"
-                className="input  input-sm input-bordered w-80 "
+                className="input  input-sm input-bordered w-80 rounded-lg"
               />
             </div>
             <div className="form-control w-full max-w-xs mt-1">
@@ -51,14 +51,14 @@ const Register = () => {
               <input
                 type="password"
                 placeholder="Enter your Password"
-                className="input  input-sm input-bordered w-80 "
+                className="input  input-sm input-bordered w-80 rounded-lg"
               />
             </div>
             <Button className="button_register w-80  " variant="primary" onClick={()=>{}}>
            register
           </Button>
-<div className="register_by_phone_number text-center text-white mt-2 cursor-pointer ">
-  Register by Phone Number
+<div className="text-xl register_by_phone_number mt-3 text-center text-white mt-2 cursor-pointer ">
+   Or Register by Phone Number
 </div>
           </div>
           <div className="newuser_section mt-10 flex justify-center items-center flex-col">

@@ -1,9 +1,10 @@
 
 .register_top 
 {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-image: url("/src/images/background.jpg");
+    /* background-image: url("/src/images/background.jpg"); */
+    background-image: linear-gradient(90deg, #ffffff , #adafaf);
 	background-size: cover;
     display: flex;
     align-items: center;
@@ -24,8 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -80px;
-}
+   }
 
 .register_left
 {
@@ -89,7 +89,7 @@
 
 .register_right
 {
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 30vh;
     /* background-color: green; */
 }
