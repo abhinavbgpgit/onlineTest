@@ -20,7 +20,7 @@ const Login = () => {
       {/* <Link to='/register'>go to register pages</Link> */}
       <div className="login_right ">
       <div className='flex items-center justify-center flex-col m-0 '>
-  <div className='md:text-green-500   sm:text-red-500   text-9xl'>Online </div>
+  <div className='md:text-green-500    sm:text-red-500  text-9xl font-bold shadow-text '>Online </div>
   <div className='font-bold text-5xl text-cyan-900 phy '> Test Series Portal</div>
   </div>
         </div>

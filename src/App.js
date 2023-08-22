@@ -7,6 +7,8 @@ import Home from './pages/home/Home';
 import Navbar from './comonents/Navbar'
 import Test from './pages/test/Test';
 import TestStart from './pages/test/TestStart';
+import Instrunctions from './pages/test/Instrunctions';
+import TestOnGo from './pages/test/TestOnGo';
 
 
 
@@ -22,6 +24,8 @@ function App() {
   <Route path='/register' element={<Register/>}></Route>
   <Route path='/test' element={<Test/>}></Route>
   <Route path='/test/:id' element={<TestStart/>}></Route>
+  <Route path='/instrunctions' element={<Instrunctions/>}></Route>
+  <Route path='/testongo/:id' element={<TestOnGo/>}></Route>
 </Routes>
  </div>
   );

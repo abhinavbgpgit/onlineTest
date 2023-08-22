@@ -2,14 +2,26 @@ import React from 'react'
 import { Button } from '../../comonents/AdvancedButton'
 import { NavLink, useParams } from 'react-router-dom'
 import Subject from '../../json/Subject'
+import { useNavigate } from 'react-router-dom'
 const TestStart = () => {
     const param=useParams()
-    const foundSubject = Subject.filter((subject) => subject.test === param.id);
-    
+    const foundSubject = Subject.filter((subject) => subject.test === param.id);    
     console.log(foundSubject);
     console.log(param)
     console.log(Subject)
-  return (
+  const navigate=useNavigate()
+  
+  const goToTest=()=>
+  {
+    navigate(
+      '/instrunctions',
+      {
+        state: {id:param.id}
+      }
+    )
+  }
+  
+    return (
     <div>
       <div className="home_main center">
         <div className="home_left">
@@ -24,8 +36,8 @@ const TestStart = () => {
           </div>
         </div>
         <div className="home_right center">
-          <div className="free_test_card center">
-            <NavLink to="/test"> Go to Test </NavLink>
+          <div className="free_test_card center" onClick={()=>{goToTest()}}>
+            Go to Test 
           </div>
         
         </div>
