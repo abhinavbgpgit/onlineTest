@@ -24,8 +24,6 @@ function App() {
   <Route path='/register' element={<Register/>}></Route>
   <Route path='/test' element={<Test/>}></Route>
   <Route path='/test/:id' element={<TestStart/>}></Route>
-  <Route path='/instrunctions' element={<Instrunctions/>}></Route>
-  <Route path='/testongo/:id' element={<TestOnGo/>}></Route>
 </Routes>
  </div>
   );
