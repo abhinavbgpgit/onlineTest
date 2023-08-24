@@ -3,8 +3,8 @@ import './App.css';
 import React, { useState } from 'react';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
-// import Home from './pages/home/Home';
-// import Navbar from './comonents/Navbar'
+import Home from './pages/home/Home';
+import Navbar from './comonents/Navbar'
 import Test from './pages/test/Test';
 import TestStart from './pages/test/TestStart';
 import Instrunctions from './pages/test/Instrunctions';
