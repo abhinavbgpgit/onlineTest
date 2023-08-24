@@ -1,79 +1,73 @@
-
 /* .login_top 
 {
     height: 90vh;
     width: 100%; */
-    /* background-image: url("/src/images/background.jpg"); */
-	/* background-image: linear-gradient(90deg, #ffffff , #adafaf);
+/* background-image: url("/src/images/background.jpg"); */
+/* background-image: linear-gradient(90deg, #ffffff , #adafaf);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;   
 } */
-/* 
-.login_main
-{
+
+/* .login_main {
     width: 30%;
-	min-width: 400px;
-    height: 80vh;    
-    background-color: bisque; 
-    border-radius: 20px;   
+    min-width: 400px;
+    height: 80vh;
+    background-color: bisque;
+    border-radius: 20px;
     border: 3px solid white;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+} */
 
 
-.login_left
-{
+/* .login_left {
     width: 100%;
     background-image: url("/src/images/sky.avif");
     background-color: rgba(0, 0, 0, 0.61);
-    
+
     backdrop-filter: blur(5px);
     height: 100%;
-    
+
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 20px;   
-}
+    border-radius: 20px;
+} */
 
-.blury
-{
+/* .blury {
     height: 100%;
     width: 100%;
     background-color: rgb(32, 45, 129);
     position: absolute;
     opacity: 0.1;
     z-index: 40;
-    border-radius: 20px 0px 0px 20px; 
-}
+    border-radius: 20px 0px 0px 20px;
+} */
 
-.new_user_text
-{
+/* .new_user_text {
     color: white;
     z-index: 99;
     margin-top: 10px;
-}
-.button_register
-{
+} */
+
+/* .button_register {
     margin-top: 20px;
     z-index: 99;
-}
+} */
 
-.login_right
-{
+/* .login_right {
     width: 50%;
     height: 30vh;
-}
-*/
+} */
 
-.user_icon
+
+/* .user_icon
 {
     width: 100px;
     height: 100px;
@@ -82,11 +76,10 @@
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border: 5px solid rgb(77, 119, 166);
     z-index: 100;
-}
+} */
 
-.test_logo
-{
-   width: 150px;
+.test_logo {
+    width: 150px;
     z-index: 222;
     position: absolute;
     top: 0;
@@ -98,12 +91,11 @@
 	z-index: 500;
 } */
 
-.shadow-text
-{
-	text-shadow: 4px 2px 3px #a4abc3;
-}
-.heading
-{
+/* .shadow-text {
+    text-shadow: 4px 2px 3px #a4abc3;
+} */
+
+/* .heading {
     text-shadow: 2px 2px 0px rgba(255, 255, 255, 1),
-    5px 4px 0px rgba(0, 0, 0, 0.15);
-}
+        5px 4px 0px rgba(0, 0, 0, 0.15);
+} */
