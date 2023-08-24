@@ -9,6 +9,7 @@ import Test from './pages/test/Test';
 import TestStart from './pages/test/TestStart';
 import Instrunctions from './pages/test/Instrunctions';
 import TestOnGo from './pages/test/TestOnGo';
+import TestFile from './pages/test/TestFile';
 
 
 
@@ -26,6 +27,7 @@ function App() {
   <Route path='/test/:id' element={<TestStart/>}></Route>
   <Route path='/instrunctions' element={<Instrunctions/>}></Route>
   <Route path='/testongo/:id' element={<TestOnGo/>}></Route>
+  <Route path='/testfile' element={<TestFile/>}></Route>
 </Routes>
  </div>
   );

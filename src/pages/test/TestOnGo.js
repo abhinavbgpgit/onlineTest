@@ -72,14 +72,8 @@ const TestOnGo = () => {
             </div>
           </li>
         </ul>
-      </div>
-
-
-
-    
-
-     
-      <NavLink  to={`/testongo/${param.id}`}><Button className="button_go_to_test_new   " variant="primary">Proceed To Test </Button></NavLink>
+      </div>     
+      <NavLink  to={`/testfile`}><Button className="button_go_to_test_new   " variant="primary">Proceed To Test </Button></NavLink>
       </div>
     </div>
   )
