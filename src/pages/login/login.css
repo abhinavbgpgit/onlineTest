@@ -1,16 +1,16 @@
 
-.login_top 
+/* .login_top 
 {
     height: 90vh;
-    width: 100%;
+    width: 100%; */
     /* background-image: url("/src/images/background.jpg"); */
-	background-image: linear-gradient(90deg, #ffffff , #adafaf);
+	/* background-image: linear-gradient(90deg, #ffffff , #adafaf);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;   
-}
-
+} */
+/* 
 .login_main
 {
     width: 30%;
@@ -68,11 +68,10 @@
 
 .login_right
 {
-    /* background-color: red; */
     width: 50%;
     height: 30vh;
 }
-
+*/
 
 .user_icon
 {
@@ -94,10 +93,10 @@
     left: 0;
 }
 
-.form
+/* .form
 {
 	z-index: 500;
-}
+} */
 
 .shadow-text
 {
