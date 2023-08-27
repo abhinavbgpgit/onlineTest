@@ -140,7 +140,6 @@ font-weight: 600;
 .test_file_right
 {
     width: 30%;
-    /* background-color: rgb(176, 65, 131); */
     height: 90vh;
     border: 0.5px solid lightgray;
 }
@@ -148,11 +147,8 @@ font-weight: 600;
 {
     height: 160px;
     background-color: rgb(249, 246, 246);
-    /* border-radius: 20px; */
-    /* width: 98%; */
     margin: auto;
-    border-bottom: 3px solid lightcoral;
-   
+    border-bottom: 3px solid lightcoral;  
 }
 .color_code_text
 {
@@ -175,16 +171,16 @@ font-weight: 600;
 {
     height: 30px;
     width: 30px;
-    background-color: blueviolet;
     border-radius: 7px;
+    background-color: blueviolet;
     color: white;
 }
 .square_3
 {
     height: 30px;
     width: 30px;
-    border: 2px solid black;
     border-radius: 7px;
+    border: 2px solid black;
 }
 .square_4
 {
@@ -192,7 +188,7 @@ font-weight: 600;
     width: 30px;
    background-color: red;
     border-radius: 7px;
-    margin-left: 42px;
+    /* margin-left: 42px; */
 }
 .square_5
 {
@@ -203,26 +199,24 @@ font-weight: 600;
     color: white;
 }
 
-.color_code_items
+/* .color_code_items
 {
     display: flex;
     justify-content: start;
-    /* background-color: aqua; */
+    background-color: aqua;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-}
+} */
 .color_code_item
 {
-  /* background-color: chocolate;  */
-  margin-left: 20px; /* width: 48%; */
+  /* margin-left: 20px; */
 }
 .question_analyser_item
 {
     height: 40px;
     min-width: 50px;
     border-radius: 7px;
-    /* background-color: green; */
     border: 2px solid lightgray;
     color: rgb(1, 0, 0);
     font-weight: 700;

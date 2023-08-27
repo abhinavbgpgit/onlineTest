@@ -85,7 +85,7 @@ const TestFile = () => {
   };
 
   const saveAndNext = () => {
-    if (quizState[visited] !== "answered" && quizState[visited] !== "review" ) {
+    if (quizState[visited] !== "answered" && quizState[visited] !== "review") {
       insertStringAtIndex(visited, "saveandexit");
     }
     console.log("visited" + visited);
@@ -96,7 +96,7 @@ const TestFile = () => {
     }
     axios
       .put(`${url}/${visited + 1}`, payload)
-      .then((response) => {})
+      .then((response) => { })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
@@ -113,8 +113,7 @@ const TestFile = () => {
     console.log(index + " clicked");
     setSelectedOption(index);
   };
-  const markForReview=()=>
-  {
+  const markForReview = () => {
     insertStringAtIndex(visited, "review");
     if (visited < questions.length - 1) {
       setVisited(visited + 1);
@@ -156,9 +155,8 @@ const TestFile = () => {
             {questions[visited]?.options.map((item, index) => (
               <li
                 key={index}
-                className={`option ${
-                  selectedOption === index ? "clicked" : ""
-                }`}
+                className={`option ${selectedOption === index ? "clicked" : ""
+                  }`}
                 onClick={() => handleOptionClick(index)}
               >
                 {item}
@@ -168,34 +166,42 @@ const TestFile = () => {
         </div>
         <div className="test_file_right">
           <div className="color_code">
+
             <div className="color_code_text">Color Code</div>
-            <div className="color_code_items">
-                           <div className="color_code_item center">
-                <div className="square_1 center">16</div>
-                <div className="square_1_text ml-2">Answered</div>
+
+            <div className="color_code_items flex">
+
+              <div className="w-[48%] ml-[13%]">
+                <div className="color_code_item flex items-center mb-[8%]">
+                  <div className="square_1 center">16</div>
+                  <div className="square_1_text ml-2">Answered</div>
+                </div>
+                <div className="color_code_item flex items-center">
+                  <div className="square_2 center">16</div>
+                  <div className="square_1_text ml-2">Marked For Review</div>
+                </div>
               </div>
-              <div className="color_code_item center">
-                <div className="square_2 center">16</div>
-                <div className="square_1_text ml-2">Marked For Review</div>
-              </div>
-              <div className="color_code_item center">
-                <div className="square_3 center">16</div>
-                <div className="square_1_text ml-2">Not Visited</div>
-              </div>
-              <div className="color_code_item center">
-                <div className="square_4 center">16</div>
-                <div className="square_1_text ml-2">Visited Not Answered</div>
+
+              <div className="w-[48%]">
+                <div className="color_code_item flex items-center mb-[8%]">
+                  <div className="square_3 center">16</div>
+                  <div className="square_1_text ml-2">Not Visited</div>
+                </div>
+                <div className="color_code_item flex items-center">
+                  <div className="square_4 center">16</div>
+                  <div className="square_1_text ml-2">Visited Not Answered</div>
+                </div>
               </div>
             </div>
+
           </div>
           <div className="question_analyser">
             {quizState.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className={`question_analyser_item center  ${
-                    item === "answered" ? "green" : "" 
-                  } ${item === 'visited' ? 'red' : ''} ${item === 'review' ? 'brown' : ''}
+                  className={`question_analyser_item center  ${item === "answered" ? "green" : ""
+                    } ${item === 'visited' ? 'red' : ''} ${item === 'review' ? 'brown' : ''}
                   ${item === 'saveandexit' ? 'red' : ''}
                   `}
                   onClick={() => questionAnalyser(index)}
@@ -204,10 +210,10 @@ const TestFile = () => {
                 </div>
               );
             })}
-          <NavLink to="/result"><div className="submit_test">
-              
+            <NavLink to="/result"><div className="submit_test">
+
               <div className="submit_text_test">Submit Test</div>
-              </div></NavLink>  
+            </div></NavLink>
           </div>
         </div>
       </div>
@@ -215,20 +221,20 @@ const TestFile = () => {
         <div className="left_buttons">
           <Button
             className="bg-violet-700"
-            onClick={() => { markForReview() }}           
-           
+            onClick={() => { markForReview() }}
+
           >
             Mark for Review & next
           </Button>
           <Button
             className="bg-sky-500 ml-5"
-            onClick={() =>{ setSelectedOption(null); }}
+            onClick={() => { setSelectedOption(null); }}
           >
             Clear Response
           </Button>
         </div>
         <Button onClick={() => saveAndNext()}>Save & next</Button>
-     
+
       </div>
     </div>
   );
