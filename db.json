@@ -1,0 +1,134 @@
+{
+  "questions": [
+    {
+      "first_question": "Which scientist is known as the father of modern genetics?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 2,
+      "id": 1
+    },
+    {
+      "first_question": "Which part of the plant is responsible for the process of photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 1,
+      "id": 2
+    },
+    {
+      "first_question": "What is the smallest unit of life that can carry out all the functions of an organism?",
+      "options": [
+        "Entomology",
+        "Botany",
+        "Zoology",
+        "Microbiology"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 2,
+      "id": 3
+    },
+    {
+      "first_question": "Which body system is responsible for circulating oxygen and nutrients throughout the body?",
+      "options": [
+        "Heart",
+        "Skin",
+        "Liver",
+        "Brain"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 4,
+      "id": 4
+    },
+    {
+      "first_question": "What is the powerhouse of the cell?",
+      "options": [
+        "A",
+        "O",
+        "B",
+        "AB"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 2,
+      "id": 5
+    },
+    {
+      "first_question": "Which structure connects muscles to bones?",
+      "options": [
+        "Transpiration",
+        "Respiration",
+        "Photosynthesis",
+        "Condensation"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 3,
+      "id": 6
+    },
+    {
+      "first_question": "Who is known for formulating the laws of inheritance and the principles of heredity?",
+      "options": [
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "Albert Einstein"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 4,
+      "id": 7
+    },
+    {
+      "first_question": "What is the process by which a cell divides into two identical daughter cells?",
+      "options": [
+        "Mitochondria",
+        "Golgi Apparatus",
+        "Nucleus",
+        "Endoplasmic Reticulum"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 2,
+      "id": 8
+    },
+    {
+      "first_question": "What gas is produced during photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Methane",
+        "Hydrogen"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 1,
+      "id": 9
+    },
+    {
+      "first_question": "Which type of connective tissue connects muscles to bones?",
+      "options": [
+        "Tendon",
+        "Ligament",
+        "Cartilage",
+        "Nerve"
+      ],
+      "done": false,
+      "review": false,
+      "selectedOption": 3,
+      "id": 10
+    }
+  ]
+}
