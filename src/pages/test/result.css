@@ -1,0 +1,206 @@
+.result_main
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.score_board
+{    
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;color: rgb(35, 67, 175);
+    margin-top: 20px;
+}
+.first_column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grade
+{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(237, 245, 245);
+    border-radius: 20px;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       flex-direction: column;
+}
+
+.grade_name
+{
+font-size: 30px;
+}
+.dgade_tilte
+{
+    font-size: 80px;
+    font-weight: 700;
+    color: brown;
+    margin-left: 20px;
+}
+
+.time_spent_per_question
+{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(231, 191, 201);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-direction: column;
+
+}
+.time_spent_per_question_text
+{
+    font-size: 28px;
+}
+.time_spent_per_question_value
+{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(36, 71, 99);
+    margin-left: 20px;
+}
+.second_column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.result
+{
+    width: 620px;
+    height: 350px;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.answers
+{
+    display:flex ;
+    gap: 20px;
+}
+.correct
+{
+width: 190px;
+height: 150px;
+background-color: rgb(247, 250, 249);
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon_ok
+{
+    width: 30px;
+    height: 30px;
+}
+.correct_text
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(18, 145, 66);
+}
+.correct_number
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 12, 5);
+}
+.correct_question_text
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(113, 117, 115);
+}
+.wrong
+{
+    width: 195px;
+    height: 150px;
+    background-color: rgb(247, 250, 249);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon_wrong
+{
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+.wrong_text
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(18, 145, 66);
+    color: red;
+}
+.wrong_number
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 12, 5);
+}
+.wrong_question_text
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(113, 117, 115);
+}
+.not_attempted
+{
+    width: 195px;
+    height: 150px;
+    background-color: rgb(247, 250, 249);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon_not_attempted
+{
+    width: 30px;
+    height: 30px;
+    color: rgb(107, 99, 99);
+}
+.not_attempted_text
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(18, 145, 66);
+    color: red;
+}
+.not_attempted_number
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 12, 5);
+}
+.not_attempted_text
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(113, 117, 115);
+}
+.third_column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question_wise_analysis
+{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(71, 167, 76);
+    border-radius: 20px;
+}
+
+.percentile
+{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(111, 61, 204);
+    border-radius: 20px;
+}
