@@ -3,6 +3,7 @@ import "./result.css";
 import { FcOk } from "react-icons/fc";
 import { AiOutlineCloseCircle } from "react-icons/ai"
 import { AiOutlineMinusCircle } from "react-icons/ai";
+import PiChart from "./PiChart";
 
 const Result = () => {
   return (
@@ -23,7 +24,14 @@ const Result = () => {
         </div>
 
         <div className="second_column">
-          <div className="result">result</div>
+          <div className="result center flex-col">
+          <div className="result_heading">
+            Your Score
+          </div>
+          <div className="result_circle center">
+            56/100
+          </div>
+          </div>
           <div className="answers">
             <div className="correct center flex-col">
              <div className="correct_icon"><FcOk className="icon_ok"/></div>
@@ -46,8 +54,16 @@ const Result = () => {
           </div>
         </div>
         <div className="third_column">
-        <div className="question_wise_analysis">question_wise_analysis</div>
-          <div className="percentile">percentile</div>
+        <div className="question_wise_analysis"><PiChart/></div>
+          <div className="percentile center flex-col">
+            
+
+
+          <div className="percentage_text">Percentage of Marks</div>
+          <div className="percentage_value">45%</div>
+          
+
+          </div>
         </div>
       </div>
     </div>

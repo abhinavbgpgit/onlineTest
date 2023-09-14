@@ -8,7 +8,11 @@ module.exports = {
   // plugins: [require("daisyui")],
   plugins: [
     require('flowbite/plugin')
+    ({
+      charts: true,
+  }),
 ],
+
 
 theme: {
   screens: {

@@ -23,7 +23,7 @@
       ],
       "done": false,
       "review": false,
-      "selectedOption": 1,
+      "selectedOption": 3,
       "id": 2
     },
     {
@@ -130,5 +130,34 @@
       "selectedOption": 3,
       "id": 10
     }
-  ]
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "passwordHash": "$2b$10$Xt.BYvxP3LO43FhQ9Q/jL.z.Fvbav4jRq3eXgl/vwKACyR0..1/Diq",
+      "email": "user1@example.com"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "passwordHash": "$2b$10$6pRJT1gFX2dCqg4YRU0FZuGhSsGR43iZ/HAp3Jq1m4tlE6ZaU..i6u",
+      "email": "user2@example.com"
+    }
+  ],
+  "registeredUsers": [{
+             "id": 1,
+             "username": "user",
+             "email": "user@example.com",
+             "passwordHash": "$2b$10$",
+             "paidUser": false
+  },
+  {
+    "id": 2,
+    "username": "user2",
+    "email": "user@example.com",
+    "passwordHash": "$2b$10$",
+    "paidUser": false
+  }
+]
 }

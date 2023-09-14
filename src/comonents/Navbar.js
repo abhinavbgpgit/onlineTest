@@ -3,17 +3,22 @@ import './navbar.css'
 import logo from '../images/test_logo_3.png'
 import { NavLink,useNavigate } from 'react-router-dom'
 import { Button } from './AdvancedButton'
+import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { logout } from '../features/user/authSlice'
+import { useDispatch } from 'react-redux'
 const Navbar = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dispatch=useDispatch();
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const isAuthenticated=useSelector((state)=>state.auth.isAuthenticated);
+  console.log(isAuthenticated)
+
   const navigate=useNavigate()
-  console.log(isDropdownOpen)
   const navigateToLogin=() => {
-    navigate('/')
-  
+    navigate('/login')  
   }
   return (
             
@@ -57,7 +62,10 @@ const Navbar = () => {
       <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Nitin Test Portal</span>
   </a>
   <div class="flex md:order-2">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{navigateToLogin()}}>Login</button>
+    {isAuthenticated?( <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{dispatch(logout())}}>Logout</button>
+    ):(<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{navigateToLogin()}}>Login</button> 
+    )}
+      {/* <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{navigateToLogin()}}>Login</button> */}
     
       <button
         data-collapse-toggle="navbar-default"
@@ -92,13 +100,13 @@ const Navbar = () => {
         <NavLink to="/" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/home" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Test</NavLink>
+        <NavLink to="/login" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Test</NavLink>
       </li>
       <li>
-        <NavLink to="/home" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Take test</NavLink>
+        <NavLink to="/test" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Take test</NavLink>
       </li>
       <li>
-        <NavLink to="/home" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Score Boared</NavLink>
+        <NavLink to="/testfile" onClick={()=>{toggleDropdown()}} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Score Boared</NavLink>
       </li>
     </ul>
   </div>

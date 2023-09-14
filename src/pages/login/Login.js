@@ -4,16 +4,20 @@ import "./login.css";
 import { Button } from "../../comonents/AdvancedButton";
 import { FcBusinessman } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
+import {login,logout} from '../../features/user/authSlice';
+import { useDispatch } from "react-redux";
+// var bcrypt = require('bcryptjs');
 
 const Login = () => {
   const navigate = useNavigate();
   const [userName, setUserName] = useState("hello");
   const [password, setPassword] = useState("hello");
-  const verifyLogin = () => {
-    userName === "hello" && password === "hello"
-      ? navigate("/home")
-      : navigate("/login");
-  };
+  const dispatch=useDispatch();
+  var bcrypt = require('bcryptjs');
+var salt = bcrypt.genSaltSync(10);
+var hash = bcrypt.hashSync(password, salt);
+//  console.log(hash)
+//  console.log(password)
   return (
     <div
       className="login_top sm:flex-wrap w-full flex items-center justify-center flex-wrap"
@@ -57,6 +61,8 @@ const Login = () => {
                 </span>
               </label>
               <input
+               value={userName}
+               onChange={(e)=>setUserName(e.target.value)}
                 type="text"
                 placeholder="Enter your Email"
                 className="input  input-sm input-bordered rounded-lg w-80 "
@@ -69,6 +75,8 @@ const Login = () => {
                 </span>
               </label>
               <input
+              value={password}
+              onChange={(e)=>setPassword(e.target.value)}
                 type="password"
                 placeholder="Enter your Email"
                 className="input  input-sm input-bordered w-80 rounded-lg"
@@ -77,7 +85,7 @@ const Login = () => {
             <Button
               className="button_register w-80  mt-[20px] z-[99]"
               variant="primary"
-              onClick={() => verifyLogin()}
+              onClick={() =>dispatch(login({userName,password}))}
             >
               Login
             </Button>

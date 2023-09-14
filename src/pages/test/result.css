@@ -75,9 +75,43 @@ font-size: 30px;
 {
     width: 620px;
     height: 350px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: rgb(252, 243, 243); */
+  background-image:
+    radial-gradient(
+      circle closest-side,
+      rgb(211, 221, 228),
+      #41a5cc
+    );
+}
+
+.result_heading{
+    font-size: 50px;
+    font-weight: 700;
+    /* color: white; */
+    /* text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+color: #000000; */
+/* background:#41a5cc; */
+
+
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+color: #FFFFFF;
+margin-bottom: 20px;
+
+}
+.result_circle
+{
+height: 200px;
+width: 200px;
+background-color: rgb(236, 211, 211);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 50%;
+border: 10px dashed  rgb(170, 43, 43);
+font-size: 40px;
+font-weight: 700;
+color: rgb(14, 98, 172);
 }
 
 .answers
@@ -193,14 +227,27 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 {
     width: 350px;
     height: 250px;
-    background-color: rgb(71, 167, 76);
+    background-color: rgb(237, 245, 245);
     border-radius: 20px;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .percentile
 {
     width: 350px;
     height: 250px;
-    background-color: rgb(111, 61, 204);
+    background-color: rgb(231, 191, 201);
     border-radius: 20px;
 }
+.percentage_text
+{
+    font-size: 28px;
+}
+.percentage_value
+{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(36, 71, 99);
+    margin-left: 20px;
+}
+
