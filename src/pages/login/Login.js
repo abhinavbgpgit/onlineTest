@@ -1,106 +1,169 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import "./login.css";
 import { Button } from "../../components/AdvancedButton";
 import { FcBusinessman } from "react-icons/fc";
-import { useNavigate } from "react-router-dom";
-import {login,logout} from '../../features/user/authSlice';
-import { useDispatch } from "react-redux";
-// var bcrypt = require('bcryptjs');
+import { motion } from "framer-motion";
+import { BiLogIn } from "react-icons/bi";
+import girl from "../../images/girl.png";
 
-const Login = () => {
-  const navigate = useNavigate();
-  const [userName, setUserName] = useState("hello");
-  const [password, setPassword] = useState("hello");
-  const dispatch=useDispatch();
-  var bcrypt = require('bcryptjs');
-var salt = bcrypt.genSaltSync(10);
-var hash = bcrypt.hashSync(password, salt);
-//  console.log(hash)
-//  console.log(password)
+const Register = () => {
   return (
     <div
-      className="login_top sm:flex-wrap w-full flex items-center justify-center flex-wrap"
-      style={{ backgroundImage: "linear-gradient(90deg, #ffffff, #adafaf)" }}
+      className="register_top  bg-cover flex  justify-center flex-wrap"
+      // style={{ backgroundImage: "linear-gradient(90deg, #ffffff , #adafaf)" }}
     >
       {/* <Link to='/register'>go to register pages</Link> */}
-      <div className="login_right w-[90%] lg:w-[50%] h-[30vh]">
-        <div className="flex items-center justify-center flex-col m-0 ">
-          <div className="text-rose-500 text-[90px] md:text-9xl font-bold shadow-text mt-12"
+      <div className="register_right w-[90%] lg:w-[50%] ">
+        <div className="flex items-center justify-center flex-col ">
+          <div
+            className="font-bold text-[60px] md:text-8xl text-rose-500 "
             style={{
-              textShadow: "2px 2px 0px rgba(255, 255, 255, 1),5px 4px 0px rgba(0, 0, 0, 0.15)"
-            }}>
+              textShadow:
+                "2px 2px 0px rgba(255, 255, 255, 1),5px 4px 0px rgba(0, 0, 0, 0.15)",
+            }}
+          >
             Online{" "}
           </div>
-          <div className="font-bold text-4xl md:text-5xl text-cyan-900 phy ">
+          <div
+            className="font-bold text-4xl md:text-5xl text-white phy"
+            style={{
+              textShadow:
+                "2px 2px 0px rgba(0, 0, 0, 1),5px 4px 0px rgba(0, 0, 0, 0.15)",
+            }}
+          >
             {" "}
             Test Series Portal
           </div>
         </div>
+        <div className="animation mt-20">
+          <motion.div
+            initial={{ marginLeft: "-800px" }}
+            animate={{ marginLeft: "220px" }}
+            transition={{
+              easeInOut: "linear",
+              duration: 1,
+              x: { duration: 1 },
+            }}
+          >
+            <div className="line1 mt-5 ">Familiarity with the Test Format</div>
+          </motion.div>
+          <motion.div
+            initial={{ marginLeft: "-800px" }}
+            animate={{ marginLeft: "220px" }}
+            transition={{
+              easeInOut: "linear",
+              duration: 1,
+              x: { duration: 2 },
+              delay: 1,
+            }}
+          >
+            <div className="line1 mt-5">Time Management</div>
+          </motion.div>
+          <motion.div
+            initial={{ marginLeft: "-800px" }}
+            animate={{ marginLeft: "220px" }}
+            transition={{
+              easeInOut: "linear",
+              duration: 1,
+              x: { duration: 1 },
+              delay: 2,
+            }}
+          >
+            <div className="line1 mt-5 ">Identifying Weaknesses</div>
+          </motion.div>
+
+          <motion.div
+            initial={{ marginLeft: "-800px" }}
+            animate={{ marginLeft: "220px" }}
+            transition={{
+              easeInOut: "linear",
+              duration: 1,
+              x: { duration: 1 },
+              delay: 3,
+            }}
+          >
+            <div className="line1 mt-5 ">Instant Feedback</div>
+          </motion.div>
+
+          <motion.div
+            initial={{ marginLeft: "-800px" }}
+            animate={{ marginLeft: "220px" }}
+            transition={{
+              easeInOut: "linear",
+              duration: 1,
+              x: { duration: 1 },
+              delay: 4,
+            }}
+          >
+            <div className="line1 mt-5 ">Higher Confidence</div>
+          </motion.div>
+        </div>
+        <img className="girl_picture" src={girl} alt="lkl" />
       </div>
       <div
-        className="login_main w-[95%] md:max-w-[620px] md:h-[80vh] bg-[bisque] rounded-[20px] border-[3px] border-white overflow-hidden flex items-center justify-center mt-[62px] mb-[62px]"
+        className="register_main mt-20 w-[95%] md:max-w-[620px] md:h-[80vh]  border-[3px] border-white rounded-[20px] overflow-hidden flex items-center justify-center
+       mb-[62px]"
         style={{
           boxShadow:
             "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
         }}
       >
-        <div className="login_left w-full h-full bg-[url(/src/images/sky.avif)] bg-[rgba(0, 0, 0, 0.61)] backdrop-blur-[5px] bg-cover flex items-center justify-center flex-col rounded-[20px]">
-          <div className="login_text_up font-bold text-6xl mb-10 mt-12 text-white shadow-text "
-            style={{ textShadow: "4px 2px 3px #a4abc3" }}>
+        <div className="register_left w-full  h-full bg-cover flex items-center justify-center flex-col rounded-[20px]">
+          <div
+            className="register_text_up font-bold text-3xl mb-11 mt-12 text-black"
+            style={{ textShadow: "4px 2px 3px #a4abc3" }}
+          >
             Login
           </div>
-          <div className="blury h-full w-full bg-[#202d81] absolute opacity-10 z-40 rounded-tl-20 "></div>
-          <FcBusinessman className="user_icon h-[80px] w-[80px] bg-white rounded-[50%] border-[5px] border-[#C8D1DC] z-[100]"
-            style={{ boxShadow: " rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px" }} />
+          <div className="blury  w-full  opacity-10 z-40 rounded-tl-20 "></div>
           <div className="form z-[500]">
-            <div className="form-control w-full max-w-xs ">
+            {/* bg-[url(/src/images/sky.avif)] */}
+
+            <div className="form-control w-full max-w-xs mt-3">
               <label className="label">
-                <span className="label-text text-white font-semibold ">
+                <span className="label-text text-black font-semibold ">
                   Email
                 </span>
               </label>
               <input
-               value={userName}
-               onChange={(e)=>setUserName(e.target.value)}
                 type="text"
-                placeholder="Enter your Email"
-                className="input  input-sm input-bordered rounded-lg w-80 "
-              />
-            </div>
-            <div className="form-control w-full max-w-xs mt-1">
-              <label className="label">
-                <span className="label-text text-white font-semibold ">
-                  Password
-                </span>
-              </label>
-              <input
-              value={password}
-              onChange={(e)=>setPassword(e.target.value)}
-                type="password"
                 placeholder="Enter your Email"
                 className="input  input-sm input-bordered w-80 rounded-lg"
               />
             </div>
+
+            <div className="form-control w-full max-w-xs  mt-3">
+              <label className="label">
+                <span className="label-text text-black font-semibold ">
+                  Password
+                </span>
+              </label>
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                className="input  input-sm input-bordered w-80 rounded-lg"
+              />
+            </div>
+
             <Button
-              className="button_register w-80  mt-[20px] z-[99]"
+              className="mt-10 z-[99] w-80"
               variant="primary"
-              onClick={() =>dispatch(login({userName,password}))}
+              onClick={() => {}}
             >
               Login
             </Button>
           </div>
-          <div className="newuser_section mt-20 flex justify-center items-center flex-col">
-            <div className="new_user_text text-white z-[99] mt-[10px]">
+          <div className="newuser_section mt-10 flex justify-center items-center flex-col">
+            <div className="new_user_text text-white z-[99] mt-[14px]">
               {" "}
-              New User ?
+              New user ?
             </div>
-            <Button
-              className="button_register mt-[20px] mb-12 z-[99]"
-              variant="primary"
-            >
-              <Link to="/register">Please Register</Link>
+            <div className="login_user_relative">
+              <Button className="button_register mt-[20px] mb-12 z-[99]" variant="primary">
+              <Link to="/register"><div style={{marginLeft:"-20px"}}>Please Register</div></Link>
             </Button>
+              <BiLogIn className="login_icon" />
+            </div>
           </div>
         </div>
       </div>
@@ -108,4 +171,4 @@ var hash = bcrypt.hashSync(password, salt);
   );
 };
 
-export default Login;
+export default Register;
