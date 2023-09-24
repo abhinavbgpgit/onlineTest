@@ -1,0 +1,91 @@
+.testPreparation_main
+{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(179, 228, 228);
+    display: flex;
+    margin-right: 500px;
+}
+
+.carousel_left
+{
+width: 50%;
+/* background-color: aquamarine; */
+height: inherit;
+display: flex;
+justify-content: right;
+align-items: center;
+}
+.carousel_left_box
+{
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+}
+.what_you_will_get
+{
+font-size: 24px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+}
+
+.carousel_heading
+{
+    font-size: 56px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.line
+{
+height: 3px;
+width: 200px;
+background-color: rgb(25, 143, 108);
+margin-top: 20px;
+}
+.carousel_description
+{
+max-width: 700px;
+font-size: 22px;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+margin-top: 30px;
+text-align: left;
+
+}
+.carousel_button
+{
+
+    background-color: green;
+    width: fit-content;
+    padding: 10px 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carousel_button:hover{
+    background-color: rgb(4, 87, 4);
+}
+.carousel_right
+{
+    width: 50%;
+    /* background-color: rgb(155, 80, 109); */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test1
+{
+    height: 700px;
+}
