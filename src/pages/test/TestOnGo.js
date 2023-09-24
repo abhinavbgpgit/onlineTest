@@ -5,7 +5,7 @@ import { FcOk } from "react-icons/fc";
 import { FcTodoList } from "react-icons/fc";
 import { useParams } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { Button } from '../../comonents/AdvancedButton'
+import { Button } from '../../components/AdvancedButton'
 import './testongo.css'
 
 const TestOnGo = () => {

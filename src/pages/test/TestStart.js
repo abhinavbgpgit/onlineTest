@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../comonents/AdvancedButton'
+import { Button } from '../../components/AdvancedButton'
 import { NavLink, useParams } from 'react-router-dom'
 import Subject from '../../json/Subject'
 import { useNavigate } from 'react-router-dom'

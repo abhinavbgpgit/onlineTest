@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
-import { Button } from "../../comonents/AdvancedButton";
+import { Button } from "../../components/AdvancedButton";
 import { FcBusinessman } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import {login,logout} from '../../features/user/authSlice';

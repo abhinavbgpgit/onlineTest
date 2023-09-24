@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@400;600;700;800;900&display=swap");
+
+.logo {
+  max-width: 100px !important;
+}
+.n-wrapper {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  /* background-color: rgb(202, 211, 234); */
+  position: relative;
+}
+.logo_header {
+  background-color: rgb(26, 86, 219);
+  color: black;
+  z-index: 300;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  height: 70px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.logo_header_shadow {
+  background-color: rgb(107, 151, 218);
+  z-index: 299;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  height: 70px;
+  width: 400px;
+  position: absolute;
+  left: 10px;
+}
+
+.download_app
+{
+  background-color: #ff5252;
+  cursor: pointer;
+}
+.download_app:hover
+{
+  background-color: #ad2424;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.n-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: start;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.n-right > ul {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #ad2424;
+}
+.nav_ui
+{
+  font-size: 18px;
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+margin-left: 650px;
+}
+
+.n-list {
+  flex: 10;
+  margin-left: 45px;
+}
+.n-list > ul {
+  display: flex;
+}
+.n-list > ul > li {
+  margin-right: 5rem;
+  font-family: "Poppins";
+  font-size: 20px;
+  /* width: fit-content; */
+}
+
+li
+{
+  width: fit-content;
+  position: relative;
+}
+ li::before {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: rgb(26, 86, 219);
+  position: absolute;
+  top: 28px;
+  transition: all 0.3s linear;
+}
+ li:hover:before {
+  width: 100%;
+}
+
+.n-middle {
+  font-size: 24px;
+}
+
+.n-button {
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #ff5252;
+  padding: 10px 25px 10px 25px;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.n-right a {
+  color: rgb(36, 18, 194);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+.link {
+  text-decoration: none;
+}

@@ -1,5 +1,6 @@
 // features/auth/authSlice.js
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice ,createAsyncThunk} from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   loading: false,
@@ -9,6 +10,15 @@ const initialState = {
   // success: false,
   isAuthenticated: false, // for monitoring the registration process.
 }
+
+export const fetchContent = createAsyncThunk(
+  'content/fetchContent',
+  async () => {
+    const res = await axios('http://localhost:8000/registeredUsers')
+    const data = await res.data
+    return data
+  }
+)
 
 const authSlice = createSlice({
   name: 'auth',

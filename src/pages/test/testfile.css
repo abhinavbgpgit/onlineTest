@@ -6,7 +6,7 @@
     width: 100%;
     height: 70px;
     background-color: rgb(225, 230, 232);    
-    z-index: 99;
+    z-index: 399;
     display: flex;
     justify-content: space-between;
     align-items: center;

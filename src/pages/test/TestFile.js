@@ -1,7 +1,7 @@
 import React from "react";
 import "./testfile.css";
 import { useState, useEffect } from "react";
-import { Button } from "../../comonents/AdvancedButton";
+import { Button } from "../../components/AdvancedButton";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 const TestFile = () => {

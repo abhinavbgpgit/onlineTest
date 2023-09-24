@@ -5,7 +5,7 @@ import Subject from '../../json/Subject';
 import { FcDebian } from "react-icons/fc";
 import { FcMindMap } from "react-icons/fc";
 import { NavLink } from 'react-router-dom';
-import { Button } from '../../comonents/AdvancedButton'
+import { Button } from '../../components/AdvancedButton'
 
 const Instrunctions = () => {
     const location=useLocation();

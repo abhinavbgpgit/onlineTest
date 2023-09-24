@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from "../../comonents/AdvancedButton";
+import { Button } from "../../components/AdvancedButton";
 import { FcBusinessman } from "react-icons/fc";
 import './register.css'
 import { motion } from "framer-motion"
 import { BiLogIn } from "react-icons/bi";
+import girl from '../../images/girl.png'
 
 
 const Register = () => {
@@ -93,6 +94,7 @@ const Register = () => {
         </motion.div>
           
         </div>
+        <img className='girl_picture' src={girl} alt="lkl" />
       </div>
       <div className="register_main mt-20 w-[95%] md:max-w-[620px] md:h-[80vh]  border-[3px] border-white rounded-[20px] overflow-hidden flex items-center justify-center
        mb-[62px]"

@@ -75,7 +75,7 @@
       ],
       "done": false,
       "review": false,
-      "selectedOption": 3,
+      "selectedOption": 2,
       "id": 6
     },
     {
@@ -145,19 +145,20 @@
       "email": "user2@example.com"
     }
   ],
-  "registeredUsers": [{
-             "id": 1,
-             "username": "user",
-             "email": "user@example.com",
-             "passwordHash": "$2b$10$",
-             "paidUser": false
-  },
-  {
-    "id": 2,
-    "username": "user2",
-    "email": "user@example.com",
-    "passwordHash": "$2b$10$",
-    "paidUser": false
-  }
-]
+  "registeredUsers": [
+    {
+      "id": 1,
+      "username": "user",
+      "email": "user@example.com",
+      "passwordHash": "$2b$10$",
+      "paidUser": false
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "email": "user@example.com",
+      "passwordHash": "$2b$10$",
+      "paidUser": false
+    }
+  ]
 }

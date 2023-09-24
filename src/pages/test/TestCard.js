@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../comonents/AdvancedButton'
+import { Button } from '../../components/AdvancedButton'
 import { NavLink } from 'react-router-dom'
 const TestCard = ({item}) => {
   return (
