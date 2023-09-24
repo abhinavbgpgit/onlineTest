@@ -1,5 +1,5 @@
 import React from 'react'
-import test1 from '../../images/carousel/test5.webp'
+import imgweakness from '../../images/carousel/imgweakness.png'
 import './slid3.css'
 
 const Slid3 = () => {
@@ -13,10 +13,11 @@ const Slid3 = () => {
   <div className="carousel_left">
     <div className="carousel_left_box">
 <div className="what_you_will_get">Why you choose us ?</div>
-<div className="carousel_heading">Time Management</div>
+<div className="carousel_heading">Identifying Weaknesses</div>
 <div className="line"></div>
 <div className="carousel_description">
-Time management during online tests helps you stay focused, complete questions accurately, and finish on time, boosting your chances of success. Efficient time management also reduces stress, allowing you to approach the test with confidence and perform at your best.
+Online tests offer a convenient and structured way to gauge one's strengths and weaknesses, enabling targeted efforts towards personal or professional development.
+By highlighting areas of deficiency through online tests, individuals can tailor their learning and training to enhance their overall competence and performance.
 </div>
 <div className="carousel_button">Try For Free </div>
 
@@ -25,7 +26,7 @@ Time management during online tests helps you stay focused, complete questions a
 
   </div>
   <div className="carousel_right">
-    <img className="test11" src={test1} alt="test1" height="700px"/>
+    <img id="slide3img" src={imgweakness} alt="test1"/>
   </div>
 </div>
 

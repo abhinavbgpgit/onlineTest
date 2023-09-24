@@ -1,5 +1,5 @@
 import React from 'react'
-import test1 from '../../images/carousel/test5.webp'
+import imgfamiliarity from '../../images/carousel/imgfamiliarity.png'
 import './slid5.css'
 
 const Slid5 = () => {
@@ -13,10 +13,10 @@ const Slid5 = () => {
   <div className="carousel_left">
     <div className="carousel_left_box">
 <div className="what_you_will_get">Why you choose us ?</div>
-<div className="carousel_heading">Time Management</div>
+<div className="carousel_heading">Familiarity with the Test Format</div>
 <div className="line"></div>
 <div className="carousel_description">
-Time management during online tests helps you stay focused, complete questions accurately, and finish on time, boosting your chances of success. Efficient time management also reduces stress, allowing you to approach the test with confidence and perform at your best.
+When students attend our online tests, they gain valuable experience with the exam format, becoming more comfortable with the layout, question types, and time constraints. This familiarity enhances their test-taking confidence and can lead to improved performance on future assessments.
 </div>
 <div className="carousel_button">Try For Free </div>
 
@@ -25,7 +25,7 @@ Time management during online tests helps you stay focused, complete questions a
 
   </div>
   <div className="carousel_right">
-    <img className="test11" src={test1} alt="test1" height="700px"/>
+    <img id="slide5img" src={imgfamiliarity} alt="test1"/>
   </div>
 </div>
 
