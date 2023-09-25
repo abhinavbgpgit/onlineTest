@@ -42,7 +42,7 @@ const Carousel = () => {
           <Slid2 />
         </SwiperSlide>
         <SwiperSlide>
-          <Slid3 />
+          <Slid3 />``
         </SwiperSlide>
         <SwiperSlide>
           <Slid4 />
