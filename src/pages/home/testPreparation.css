@@ -5,7 +5,7 @@
     background-color: rgb(222, 241, 241);
     display: flex;
     margin-right: 500px;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -15,7 +15,7 @@ width: 50%;
 /* background-color: aquamarine; */
 height: inherit;
 display: flex;
-justify-content: right;
+justify-content: start;
 align-items: center;
 }
 .testPreparation_left_box
@@ -36,7 +36,7 @@ font-weight: 700;
 
 .testPreparation_heading
 {
-    font-size: 56px;
+    font-size: 44px;
     font-family: 'Heebo', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;

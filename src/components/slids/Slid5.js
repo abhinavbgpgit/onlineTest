@@ -8,12 +8,13 @@ const Slid5 = () => {
              <div className="corcoul">  
 
 
-<div className="carousel_main">
+<div className="carousel5_main">
 
   <div className="carousel_left">
     <div className="carousel_left_box">
 <div className="what_you_will_get">Why you choose us ?</div>
-<div className="carousel_heading">Familiarity with the Test Format</div>
+<div className="carousel_heading">Familiarity with the </div>
+<div className="carousel_heading">Test Format</div>
 <div className="line"></div>
 <div className="carousel_description">
 When students attend our online tests, they gain valuable experience with the exam format, becoming more comfortable with the layout, question types, and time constraints. This familiarity enhances their test-taking confidence and can lead to improved performance on future assessments.

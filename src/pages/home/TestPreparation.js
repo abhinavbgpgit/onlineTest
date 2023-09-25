@@ -11,7 +11,8 @@ const TestPreparation = () => {
 <div className="testPreparation_left">
   <div className="testPreparation_left_box">
 <div className="what_you_will_get">Ace your tests to build confidence for your exams</div>
-<div className="testPreparation_heading">Take your Test Preparation to the next level</div>
+<div className="testPreparation_heading">Take your Test Preparation </div>
+<div className="testPreparation_heading">to the next level</div>
 <div className="line"></div>
 <div className="testPreparation_description">
 Our Online tests make you feel more confident because you can take them in a comfortable setting, get instant feedback on how you're doing, and they adjust to your level, so you're not overwhelmed. This helps you believe in your abilities and get better at what you're learning.
