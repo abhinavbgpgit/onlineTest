@@ -1,3 +1,4 @@
+
 import React from "react";
 import playStoreIcon from "../../images/googleplay.png";
 import { BsFacebook, BsYoutube, BsWhatsapp} from 'react-icons/bs'
@@ -59,3 +60,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

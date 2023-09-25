@@ -1,21 +1,22 @@
 import React from 'react'
-import test_content from '../../images/home/hello.webp';
-import './testPreparation.css'
 import mockTestIcon from '../../images/prevyearmocktesticon.png'
 import detailedReportIcon from '../../images/detailedreport icon.png'
-const TestPreparation = () => {
+import test_content from '../../images/home/ANY_TIME_TEST.png';
+import downloadAppplay from '../../images/home/playstore.png';
+import downloadAppstore from '../../images/home/appstore.png';
+import './anytimetest.css'
+
+const AnyTimeTest = () => {
   return (
     <div>
-       <div className="testPreparation_main">
-       <div className="carousel_right">
-  <img className="test__praparation_img" src={test_content} alt="test1" />
-</div>
-<div className="testPreparation_left">
-  <div className="testPreparation_left_box">
+             <div className="any_time_text_main">
+   
+<div className="any_time_text_left">
+  <div className="any_time_text_left_box">
 <div className="what_you_will_get">Ace your tests to build confidence for your exams</div>
-<div className="testPreparation_heading">Take your Test Preparation </div>
-<div className="testPreparation_heading mt-[-10px]">To the next level</div>
-<div className="testPreparation_description w-[80%]">
+<div className="any_time_text_heading">Take your Test from anywhere </div>
+<div className="any_time_text_heading mt-[-10px]">And any time</div>
+<div className="any_time_text_description w-[80%]">
   <div className='pl-[86px] relative'>
     <img className='w-16 absolute top-3 left-2' src={mockTestIcon} alt="" />
     <h1 className='text-[20px] font-bold'>Previous Years Papers & Mock Tests</h1>
@@ -27,16 +28,21 @@ const TestPreparation = () => {
     <p className='text-[17px]'>Get detailed report and analysis to improve your learning and make your NEET exam simplified.</p>
   </div>
 </div>
-<div className="testPreparation_button">Try For Free </div>
-
+<div className='flex items-center'>
+<div className="any_time_text_button">Download Our App </div>
+<img className="any_time_text_img_play" src={downloadAppplay} alt="test1"  />
+<img className="any_time_text_img_store" src={downloadAppstore} alt="test1"  />
+</div>
   </div>
 
 
 </div>
-
+<div className="carousel_right">
+  <img className="test__praparation_img" src={test_content} alt="test1" />
+</div>
 </div> 
     </div>
   )
 }
 
-export default TestPreparation
+export default AnyTimeTest
