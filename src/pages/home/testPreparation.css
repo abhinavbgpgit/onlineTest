@@ -1,28 +1,31 @@
-.carousel5_main
+.testPreparation_main
 {
     width: 100%;
     height: 90vh;
-    background-color: rgb(238, 243, 243);
+    background-color: rgb(222, 241, 241);
     display: flex;
-    margin-right: 770px;
+    margin-right: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel_left
+.testPreparation_left
 {
 width: 50%;
 /* background-color: aquamarine; */
 height: inherit;
 display: flex;
-justify-content: right;
+justify-content: start;
 align-items: center;
 }
-.carousel_left_box
+.testPreparation_left_box
 {
     /* background-color: red; */
     display: flex;
     justify-content: end;
     align-items: start;
     flex-direction: column;
+    
 }
 .what_you_will_get
 {
@@ -31,9 +34,9 @@ font-family: 'Raleway', sans-serif;
 font-weight: 700;
 }
 
-.carousel_heading
+.testPreparation_heading
 {
-    font-size: 56px;
+    font-size: 44px;
     font-family: 'Heebo', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
@@ -45,7 +48,7 @@ width: 200px;
 background-color: rgb(25, 143, 108);
 margin-top: 20px;
 }
-.carousel_description
+.testPreparation_description
 {
 max-width: 700px;
 font-size: 22px;
@@ -55,10 +58,10 @@ margin-top: 30px;
 text-align: left;
 
 }
-.carousel_button
+.testPreparation_button
 {
 
-    background-color: green;
+    background-color: rgb(238, 71, 59);
     width: fit-content;
     padding: 10px 30px;
     color: white;
@@ -72,7 +75,7 @@ text-align: left;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.carousel_button:hover{
+.testPreparation_button:hover{
     background-color: rgb(4, 87, 4);
 }
 .carousel_right
@@ -85,7 +88,7 @@ text-align: left;
     align-items: center;
 }
 
-#slide5img
+.test__praparation_img
 {
-    height: 380px;
+    height: 500px;
 }
