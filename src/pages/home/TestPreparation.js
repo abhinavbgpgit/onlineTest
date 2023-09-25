@@ -1,6 +1,8 @@
 import React from 'react'
 import test_content from '../../images/home/hello.webp';
 import './testPreparation.css'
+import mockTestIcon from '../../images/prevyearmocktesticon.png'
+import detailedReportIcon from '../../images/detailedreport icon.png'
 const TestPreparation = () => {
   return (
     <div>
@@ -13,9 +15,17 @@ const TestPreparation = () => {
 <div className="what_you_will_get">Ace your tests to build confidence for your exams</div>
 <div className="testPreparation_heading">Take your Test Preparation </div>
 <div className="testPreparation_heading">to the next level</div>
-<div className="line"></div>
-<div className="testPreparation_description">
-Our Online tests make you feel more confident because you can take them in a comfortable setting, get instant feedback on how you're doing, and they adjust to your level, so you're not overwhelmed. This helps you believe in your abilities and get better at what you're learning.
+<div className="testPreparation_description w-[80%]">
+  <div className='pl-[86px] relative'>
+    <img className='w-8 absolute top-3 left-2' src={mockTestIcon} alt="" />
+    <h1 className='text-[20px] font-bold'>Previous Years Papers & Mock Tests</h1>
+    <p className='text-[17px]'>Revise and prepare with previous years papers & free Mock Tests for assured success</p>
+  </div>
+  <div className='pl-[86px] relative mt-4'>
+    <img className='w-8 absolute top-2 left-2' src={detailedReportIcon} alt="" />
+    <h1 className='text-[20px] font-bold'>Detailed Reports</h1>
+    <p className='text-[17px]'>Get detailed report and analysis to improve your learning</p>
+  </div>
 </div>
 <div className="testPreparation_button">Try For Free </div>
 
