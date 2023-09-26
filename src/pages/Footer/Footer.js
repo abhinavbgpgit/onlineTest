@@ -1,3 +1,4 @@
+
 import React from "react";
 import playStoreIcon from "../../images/googleplay.png";
 import { BsFacebook, BsYoutube, BsWhatsapp} from 'react-icons/bs'
@@ -50,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div>
-          Copyright @ 2010-2023 CareerOrbits.com.All Right Reserved.
+          Copyright @ 2010-2023 VedicTechnologies.com. All Right Reserved.
         </div>
 
       </div>
@@ -59,3 +60,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

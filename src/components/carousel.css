@@ -4,7 +4,6 @@
   html,
   body {
     position: relative;
-    height: 100%;
     width: 100%;
   }
   
@@ -70,3 +69,20 @@
     transform: rotate(-90deg);
   }
   
+  @media screen and (max-width: 768px) {
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper {
+      width: 100%;
+      height: 70vh;
+    }
+    
+  }

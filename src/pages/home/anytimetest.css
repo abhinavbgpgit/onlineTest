@@ -1,24 +1,24 @@
-.testPreparation_main
+.any_time_text_main
 {
     width: 100%;
     height: 90vh;
-    background-color: rgb(222, 241, 241);
+    background-color: rgb(222, 225, 241);
     display: flex;
     margin-right: 500px;
     justify-content: center;
     align-items: center;
 }
 
-.testPreparation_left
+.any_time_text_left
 {
 width: 50%;
 /* background-color: aquamarine; */
 height: inherit;
 display: flex;
-justify-content: start;
+justify-content: end;
 align-items: center;
 }
-.testPreparation_left_box
+.any_time_text_left_box
 {
     /* background-color: red; */
     display: flex;
@@ -27,21 +27,21 @@ align-items: center;
     flex-direction: column;
     
 }
-.testPreparation_what_you_will_get
+.what_you_will_get
 {
 font-size: 24px;
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 }
 
-.testPreparation_heading
+.any_time_text_heading
 {
     font-size: 44px;
     font-family: 'Heebo', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
 }
-.testPreparation_description
+.any_time_text_description
 {
 max-width: 700px;
 font-size: 22px;
@@ -51,7 +51,7 @@ margin-top: 30px;
 text-align: left;
 
 }
-.testPreparation_button
+.any_time_text_button
 {
 
     background-color: rgb(238, 71, 59);
@@ -68,10 +68,10 @@ text-align: left;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.testPreparation_button:hover{
+.any_time_text_button:hover{
     background-color: rgb(4, 87, 4);
 }
-.carousel_right
+.any_time_text_right
 {
     width: 50%;
     /* background-color: rgb(155, 80, 109); */
@@ -81,49 +81,38 @@ text-align: left;
     align-items: center;
 }
 
-.test__praparation_img
+.any_time_text_img_play
 {
-    height: 500px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.any_time_text_img_store
+{
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .testPreparation_main
+    .any_time_text_main
 {
     width: 100%;
-    height: fit-content;
-    background-color: rgb(222, 241, 241);
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+    height: fit-content;   
+    flex-direction: column;   
+    padding: 30px;
+    /* border: 2px dashed; */
 }
-.testPreparation_right
-{
-    width: 100%;
-    height: 500px;
-    /* background-color: rgb(155, 80, 109); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.test__praparation_img
-{
-    height: 300px;
-}
-.testPreparation_left
+.any_time_text_left
 {
 width: 100%;
 /* background-color: aquamarine; */
-height: auto;
-display: flex;
-justify-content: start;
-align-items: center;
-padding: 30px;
-
 }
-.testPreparation_left_box
+.any_time_text_left_box
 {
     /* background-color: red; */
     display: flex;
@@ -132,21 +121,22 @@ padding: 30px;
     flex-direction: column;
     
 }
-.testPreparation_what_you_will_get
+.what_you_will_get
 {
 font-size: 18px;
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
+margin-left: 0px;
 }
 
-.testPreparation_heading
+.any_time_text_heading
 {
     font-size: 32px;
     font-family: 'Heebo', sans-serif;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
-.testPreparation_description
+.any_time_text_description
 {
 max-width: 700px;
 font-size: 22px;
@@ -155,5 +145,32 @@ font-weight: 500;
 margin-top: 30px;
 text-align: left;
 
+}
+.any_time_text_right
+{
+    width: 100%;
+    /* background-color: rgb(155, 80, 109); */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons
+{
+    display: block;
+}
+.any_time_text_img_play
+{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.any_time_text_img_store
+{
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 0px;
 }
 }
