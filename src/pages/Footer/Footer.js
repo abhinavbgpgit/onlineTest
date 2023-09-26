@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div>
-          Copyright @ 2010-2023 CareerOrbits.com.All Right Reserved.
+          Copyright @ 2010-2023 VedicTechnologies.com. All Right Reserved.
         </div>
 
       </div>

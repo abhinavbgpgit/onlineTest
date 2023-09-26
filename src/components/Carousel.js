@@ -20,10 +20,10 @@ const Carousel = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={150}
+        // centeredSlides={true}
         autoplay={{
-          delay: 116500,
+          delay: 114500,
           disableOnInteraction: false,
         }}
         pagination={{
