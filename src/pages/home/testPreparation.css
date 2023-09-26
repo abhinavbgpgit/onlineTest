@@ -27,7 +27,7 @@ align-items: center;
     flex-direction: column;
     
 }
-.what_you_will_get
+.testPreparation_what_you_will_get
 {
 font-size: 24px;
 font-family: 'Raleway', sans-serif;
@@ -84,4 +84,76 @@ text-align: left;
 .test__praparation_img
 {
     height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .testPreparation_main
+{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(222, 241, 241);
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.testPreparation_right
+{
+    width: 100%;
+    height: 500px;
+    /* background-color: rgb(155, 80, 109); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.test__praparation_img
+{
+    height: 300px;
+}
+.testPreparation_left
+{
+width: 100%;
+/* background-color: aquamarine; */
+height: auto;
+display: flex;
+justify-content: start;
+align-items: center;
+padding: 30px;
+
+}
+.testPreparation_left_box
+{
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.testPreparation_what_you_will_get
+{
+font-size: 18px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+}
+
+.testPreparation_heading
+{
+    font-size: 32px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.testPreparation_description
+{
+max-width: 700px;
+font-size: 22px;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+margin-top: 30px;
+text-align: left;
+
+}
 }

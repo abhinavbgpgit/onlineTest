@@ -7,12 +7,12 @@ const TestPreparation = () => {
   return (
     <div>
        <div className="testPreparation_main">
-       <div className="carousel_right">
+       <div className="testPreparation_right">
   <img className="test__praparation_img" src={test_content} alt="test1" />
 </div>
 <div className="testPreparation_left">
   <div className="testPreparation_left_box">
-<div className="what_you_will_get">Ace your tests to build confidence for your exams</div>
+<div className="testPreparation_what_you_will_get">Ace your tests to build confidence for your exams</div>
 <div className="testPreparation_heading">Take your Test Preparation </div>
 <div className="testPreparation_heading mt-[-10px]">To the next level</div>
 <div className="testPreparation_description w-[80%]">

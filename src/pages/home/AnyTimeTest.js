@@ -28,7 +28,7 @@ const AnyTimeTest = () => {
     <p className='text-[17px]'>Get detailed report and analysis to improve your learning and make your NEET exam simplified.</p>
   </div>
 </div>
-<div className='flex items-center'>
+<div className=' buttons flex items-center'>
 <div className="any_time_text_button">Download Our App </div>
 <img className="any_time_text_img_play" src={downloadAppplay} alt="test1"  />
 <img className="any_time_text_img_store" src={downloadAppstore} alt="test1"  />
@@ -37,7 +37,7 @@ const AnyTimeTest = () => {
 
 
 </div>
-<div className="carousel_right">
+<div className="any_time_text_right">
   <img className="test__praparation_img" src={test_content} alt="test1" />
 </div>
 </div> 
