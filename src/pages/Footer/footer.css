@@ -5,3 +5,7 @@
 {
     font-family: 'Raleway', sans-serif;
 }
+.slow_motion
+{
+    transition: max-height 0.5s ease;
+}
