@@ -3,8 +3,7 @@
   height: 90vh;
   background-color: rgb(238, 243, 243);
   display: flex;
-  margin-right: 700px;
-}
+ }
 
 .slid_left {
   width: 50%;
@@ -65,7 +64,7 @@
 .slid_button:hover {
   background-color: rgb(4, 87, 4);
 }
-.slid1_right {
+.slid_right {
   width: 50%;
   /* background-color: rgb(155, 80, 109); */
   height: inherit;
@@ -90,10 +89,9 @@
     margin-right: 700px;
   }
   .slid_left {
-    min-width: 600px;
+    width:100%;
     /* background-color: aquamarine; */
     height: inherit;
-    display: flex;
     justify-content: start;
     align-items: center;
   }
@@ -118,7 +116,8 @@
     font-family: "Heebo", sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
-    margin-left: -30px;
+    /* margin-left: -30px; */
+    text-align: start;
   }
   .line {
     height: 3px;

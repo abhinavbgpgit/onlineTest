@@ -18,7 +18,7 @@ const Slid3 = () => {
               learning and training to enhance their overall competence and
               performance.
             </div>
-            <div className="carousel_button">Try For Free </div>
+            <div className="slid_button">Try For Free </div>
           </div>
         </div>
         <div className="slid_right">

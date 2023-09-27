@@ -18,7 +18,7 @@ const Slid1 = () => {
               This helps you believe in your abilities and get better at what
               you're learning.
             </div>
-            <div className="carousel_button">Try For Free </div>
+            <div className="slid_button">Try For Free </div>
           </div>
         </div>
         <div className="slid_right">

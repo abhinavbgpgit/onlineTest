@@ -17,7 +17,7 @@ const Slid5 = () => {
                 familiarity enhances their test-taking confidence and can lead
                 to improved performance on future assessments.
             </div>
-            <div className="carousel_button">Try For Free </div>
+            <div className="slid_button">Try For Free </div>
           </div>
         </div>
         <div className="slid_right">

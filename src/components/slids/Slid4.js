@@ -20,7 +20,7 @@ const Slid4 = () => {
                 encourages students to make real-time adjustments to enhance
                 their understanding and mastery of the subject matter.
             </div>
-            <div className="carousel_button">Try For Free </div>
+            <div className="slid_button">Try For Free </div>
           </div>
         </div>
         <div className="slid_right">

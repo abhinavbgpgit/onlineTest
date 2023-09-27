@@ -3,14 +3,19 @@ import React from "react";
 import playStoreIcon from "../../images/googleplay.png";
 import { BsFacebook, BsYoutube, BsWhatsapp} from 'react-icons/bs'
 import { AiFillTwitterCircle} from 'react-icons/ai'
-
+import './footer.css'
+import { AiOutlineCaretDown } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="text-white">
 
-      <div className="bg-[#092C43] px-[230px] py-4">
-        <span className="text-[18px] font-semibold">+ QUICK LINKS - </span>
-        <span className="text-base">Explore popular categories</span>
+      <div className="bg-[#75b4df] px-[230px] py-4 flex items-center ">
+      <AiOutlineCaretDown className="cursor-pointer"/>
+        <span className="text-[18px] ml-2 font-semibold text-blue-700 hover:text-blue-950 cursor-pointer ">Quick Links </span>
+        {/* <span className="text-base">Explore popular categories</span> */}
+        <div className="show_div">
+          {/* add div here  */}
+        </div>
       </div>
 
 

@@ -17,7 +17,7 @@ const Slid2 = () => {
               allowing you to approach the test with confidence and perform at
               your best.
             </div>
-            <div className="carousel_button">Try For Free </div>
+            <div className="slid_button">Try For Free </div>
           </div>
         </div>
         <div className="slid_right">
