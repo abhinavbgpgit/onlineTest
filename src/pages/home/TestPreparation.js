@@ -27,7 +27,7 @@ const TestPreparation = () => {
     <p className='text-[17px]'>Get detailed report and analysis to improve your learning and make your NEET exam simplified.</p>
   </div>
 </div>
-<div className="testPreparation_button">Try For Free </div>
+<div className="testPreparation_button">Try Test For Free</div>
 
   </div>
 
