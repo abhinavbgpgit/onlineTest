@@ -1,7 +1,7 @@
 import React from "react";
 import instantfeedback from "../../images/carousel/instantfeedback.png";
 import { useInstantTransition } from "framer-motion";
-
+import "./slide.css";
 
 const Slid4 = () => {
   return (

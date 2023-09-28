@@ -1,6 +1,6 @@
 import React from "react";
 import test1 from "../../images/carousel/test5.webp";
-
+import "./slide.css";
 const Slid2 = () => {
   return (
     <div>

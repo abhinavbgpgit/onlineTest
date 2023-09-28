@@ -1,6 +1,6 @@
 import React from "react";
 import test1 from "../../images/carousel/higher_confidence.png";
-import "./slid1.css";
+import "./slide.css";
 
 const Slid1 = () => {
   return (

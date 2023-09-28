@@ -1,5 +1,7 @@
 import React from "react";
 import imgfamiliarity from "../../images/carousel/imgfamiliarity.png";
+import "./slide.css";
+
 
 const Slid5 = () => {
   return (
@@ -21,7 +23,7 @@ const Slid5 = () => {
           </div>
         </div>
         <div className="slid_right">
-          <img className="test11" src={imgfamiliarity} alt="test1" height="700px" />
+          <img className="test15" src={imgfamiliarity} alt="test1"  />
         </div>
       </div>
     </div>

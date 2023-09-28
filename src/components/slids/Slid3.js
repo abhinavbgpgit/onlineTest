@@ -1,5 +1,6 @@
 import React from "react";
 import imgweakness from "../../images/carousel/imgweakness.png";
+import "./slide.css";
 
 const Slid3 = () => {
   return (
@@ -22,7 +23,7 @@ const Slid3 = () => {
           </div>
         </div>
         <div className="slid_right">
-          <img className="test11" src={imgweakness} alt="test1" />
+          <img className="test13" src={imgweakness} alt="test1"  />
         </div>
       </div>
     </div>
