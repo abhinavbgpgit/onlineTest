@@ -12,6 +12,7 @@ import TestFile from "./pages/test/TestFile";
 import Result from "./pages/test/Result";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import Footer from "./pages/Footer/Footer";
+import LoginModal from "./pages/login/LoginModal";
 
 function App() {
   // const {isAuthenticated} = useSelector((state) => state.auth);
@@ -43,6 +44,7 @@ function App() {
         <Route path="/result" element={<Result />} />
       </Routes>
       <Footer/>
+      <LoginModal/>
     </div>
   );
 }

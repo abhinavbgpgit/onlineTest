@@ -1,8 +1,11 @@
 import React from "react";
 import test1 from "../../images/carousel/higher_confidence.png";
 import "./slide.css";
+import {loginShowModal,loginHideModal} from '../../features/user/openLoginModalSlice';
+import { useDispatch } from 'react-redux'
 
 const Slid1 = () => {
+  const dispatch=useDispatch();
   return (
     <div>
       <div className="slid_main">
@@ -18,7 +21,7 @@ const Slid1 = () => {
               This helps you believe in your abilities and get better at what
               you're learning.
             </div>
-            <div className="slid_button">Try Test For Free </div>
+            <div className="slid_button" onClick={()=>dispatch(loginShowModal())}>Try Test For Free </div>
           </div>
         </div>
         <div className="slid_right">
