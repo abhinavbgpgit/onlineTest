@@ -4,6 +4,22 @@ import { BsFacebook, BsYoutube, BsWhatsapp } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import "./footer.css";
 import { AiOutlineCaretDown } from "react-icons/ai";
+import { motion, AnimatePresence } from "framer-motion";
+
+const showFooter = {
+  height:"auto",
+  opacity:1,
+  transition:{
+    duration:.3,
+  }
+}
+const hideFooter = {
+  height:0,
+  opacity:0,
+  transition:{
+    duration:.3,
+  }
+}
 const Footer = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -22,27 +38,29 @@ const Footer = () => {
           Explore popular categories
         </span>
       </div>
-      {toggle && (
-        <div className="bg-[#ebf1f5] pl-[10%] md:pl-[230px] md:pr-[500px] py-10 flex md:flex-row flex-col md:items-center justify-between text-black slow_motion">
-          <div className="text-[17px]">
-            <h1 className="font-bold md:pb-4">IIT JEE Advanced</h1>
-            <p>IIT JEE Test Chaperwise</p>
-            <p>IIT JEE Test Full Syllabus </p>
-          </div>
+      <AnimatePresence>
+        {toggle && (
+        <motion.div initial={hideFooter} animate={showFooter} exit={hideFooter} className="bg-[#ebf1f5] pl-[10%] md:pl-[230px] md:pr-[500px] flex md:flex-row flex-col md:items-center justify-between text-black slow_motion ">
+            <div className="text-[17px] py-7">
+              <h1 className="font-bold md:pb-4">IIT JEE Advanced</h1>
+              <p>IIT JEE Test Chaperwise</p>
+              <p>IIT JEE Test Full Syllabus </p>
+            </div>
 
-          <div className="text-[17px]">
-            <h1 className="font-bold mt-4 md:mt-0 md:pb-4">JEE Advanced</h1>
-            <p>JEE Main Test Chaperwise</p>
-            <p className="">JEE Main Test Full Syllabus</p>
-          </div>
+            <div className="text-[17px]">
+              <h1 className="font-bold mt-4 md:mt-0 md:pb-4">JEE Advanced</h1>
+              <p>JEE Main Test Chaperwise</p>
+              <p className="">JEE Main Test Full Syllabus</p>
+            </div>
 
-          <div className="text-[17px]">
-            <h1 className="font-bold mt-4 md:mt-0 md:pb-4">NEET-UG</h1>
-            <p>NEET Test Chaperwise</p>
-            <p>NEET Test Full Syllabus</p>
-          </div>
-        </div>
-      )}
+            <div className="text-[17px] py-7">
+              <h1 className="font-bold mt-4 md:mt-0 md:pb-4">NEET-UG</h1>
+              <p>NEET Test Chaperwise</p>
+              <p>NEET Test Full Syllabus</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="bg-[#296f9e] pl-[10%] md:px-[230px] py-5 flex md:flex-row flex-col md:items-center justify-between text-white">
         <div className="text-[17px] md:flex gap-10">
@@ -57,7 +75,10 @@ const Footer = () => {
           <h1 className="text-xl font-bold mt-5 md:mt-0">
             Prepare Anytime, Anywhere! Download App Now!
           </h1>
-          <img className="w-[150px]" src={playStoreIcon} alt="" />
+          <figure className="flex items-center justify-between">
+            <img className="w-[150px]" src={playStoreIcon} alt="" />
+            <img className="w-[150px]" src={playStoreIcon} alt="" />
+          </figure>
         </div>
       </div>
 
@@ -66,12 +87,12 @@ const Footer = () => {
           <div>Privacy</div>
           <div className="hidden md:block">|</div>
           <div>Terms & Conditions</div>
-          <div className="md:ml-9 flex gap-3">| Follow us:
-          <BsFacebook className="text-xl ml-2" />
-          <AiFillTwitterCircle className="text-2xl" />
-          <BsYoutube className="text-2xl" />
-          <BsWhatsapp className="text-xl" />
-          
+          <div className="md:ml-9 flex gap-3">
+            | Follow us:
+            <BsFacebook className="text-xl ml-2" />
+            <AiFillTwitterCircle className="text-2xl" />
+            <BsYoutube className="text-2xl" />
+            <BsWhatsapp className="text-xl" />
           </div>
         </div>
 
