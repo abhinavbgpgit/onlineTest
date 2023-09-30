@@ -46,7 +46,7 @@ function App() {
       </Routes>
       <Footer/>
       <RegistrationModal/>
-      {/* <LoginModal/> */}
+      <LoginModal/>
     </div>
   );
 }

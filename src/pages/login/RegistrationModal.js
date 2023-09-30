@@ -13,8 +13,6 @@ import {
 } from "../../features/user/openLoginModalSlice";
 
 const RegistrationModal = () => {
-  const [toggleLoginModal, setToggleLoginModal] = useState(false);
-  // const isAuthenticated=useSelector((state)=>state.auth.isAuthenticated);
   const toggleModal = useSelector((state) => state.registerModal.registerModalShow);
   useEffect(() => {
     console.log(toggleModal);
@@ -213,7 +211,7 @@ const RegistrationModal = () => {
 
                 <div className="text-center text-xl">
                   <div>-----------OR------------</div>
-                  <div>Already have an account? <span className="text-blue-700 hover:border-b-[1px] border-blue-700" onClick={()=>{dispatch(registerHideModal());dispatch(loginShowModal())}}>Log in</span> </div>
+                  <div>Already have an account? <span className="text-blue-500  border-blue-700 cursor-pointer hover:no-underline" onClick={()=>{dispatch(registerHideModal());dispatch(loginShowModal())}}>Log in</span> </div>
                 </div>
               </div>
             </div>

@@ -7,12 +7,12 @@ import {
   loginShowModal,
   loginHideModal,
 } from "../../features/user/openLoginModalSlice";
+import { registerShowModal } from "../../features/user/openRegisterModalSlice";
 
 const LoginModal = () => {
-  const [toggleLoginModal, setToggleLoginModal] = useState(false);
-  // const isAuthenticated=useSelector((state)=>state.auth.isAuthenticated);
-  const toggleModal = useSelector((state) => state.LoginModal.loginModalShow);
+  const toggleModal = useSelector((state) => state.loginModal.loginModalShow);
   useEffect(() => {
+    console.log("$$$$$$$$$$$$$$$$$")
     console.log(toggleModal);
   }, [toggleModal]);
 
@@ -21,7 +21,7 @@ const LoginModal = () => {
   return (
     <div>
       {toggleModal && (
-        <div
+            <div
           id="defaultModal"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.56)" }}
           tabindex="-1"
@@ -94,7 +94,7 @@ const LoginModal = () => {
                   <div>-----------OR------------</div>
                   <div>
                     New User?{" "}
-                    <span className="text-blue-700 font-medium tracking-tighter hover:underline">
+                    <span className="text-blue-700 font-medium tracking-tighter  cursor-pointer " onClick={()=>{dispatch(loginHideModal());dispatch(registerShowModal());}}>
                       Create Account/SignUp
                     </span>
                   </div>
@@ -103,7 +103,7 @@ const LoginModal = () => {
             </div>
           </div>
         </div>
-      )}
+      )} 
     </div>
   );
 };
