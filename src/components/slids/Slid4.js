@@ -2,8 +2,11 @@ import React from "react";
 import instantfeedback from "../../images/carousel/instantfeedback.png";
 import { useInstantTransition } from "framer-motion";
 import "./slide.css";
+import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import { useDispatch } from 'react-redux'
 
 const Slid4 = () => {
+  const dispatch=useDispatch();
   return (
     <div>
       <div className="slid_main">
@@ -20,7 +23,7 @@ const Slid4 = () => {
                 encourages students to make real-time adjustments to enhance
                 their understanding and mastery of the subject matter.
             </div>
-            <div className="slid_button">Try Test For Free</div>
+            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
           </div>
         </div>
         <div className="slid_right">

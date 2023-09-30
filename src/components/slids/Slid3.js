@@ -1,8 +1,11 @@
 import React from "react";
 import imgweakness from "../../images/carousel/imgweakness.png";
 import "./slide.css";
+import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import { useDispatch } from 'react-redux'
 
 const Slid3 = () => {
+  const dispatch=useDispatch();
   return (
     <div>
       <div className="slid_main">
@@ -19,7 +22,7 @@ const Slid3 = () => {
               learning and training to enhance their overall competence and
               performance.
             </div>
-            <div className="slid_button">Try Test For Free</div>
+            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
           </div>
         </div>
         <div className="slid_right">
