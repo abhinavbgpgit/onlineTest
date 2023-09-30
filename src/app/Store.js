@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import authReducer from '../features/user/authSlice';
-import loginReducer from '../features/user/openLoginModalSlice';
+import registerReducer from '../features/user/openRegisterModalSlice';
 
 const store = configureStore({
   reducer: {
     auth: authReducer,
-    loginModal : loginReducer
+    registerModal : registerReducer
   }
 })
 export default store

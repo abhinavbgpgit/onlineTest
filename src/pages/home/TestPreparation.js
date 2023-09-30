@@ -3,7 +3,11 @@ import test_content from '../../images/home/hello.webp';
 import './testPreparation.css'
 import mockTestIcon from '../../images/prevyearmocktesticon.png'
 import detailedReportIcon from '../../images/detailedreport icon.png'
+import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import { useDispatch } from 'react-redux'
+
 const TestPreparation = () => {
+  const dispatch = useDispatch();
   return (
     <div>
        <div className="testPreparation_main">
@@ -27,7 +31,7 @@ const TestPreparation = () => {
     <p className='text-[17px]'>Get detailed report and analysis to improve your learning and make your NEET exam simplified.</p>
   </div>
 </div>
-<div className="testPreparation_button">Try Test For Free</div>
+<div className="testPreparation_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
 
   </div>
 

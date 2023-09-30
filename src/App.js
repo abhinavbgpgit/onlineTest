@@ -12,6 +12,7 @@ import TestFile from "./pages/test/TestFile";
 import Result from "./pages/test/Result";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import Footer from "./pages/Footer/Footer";
+import RegistrationModal from "./pages/login/RegistrationModal";
 import LoginModal from "./pages/login/LoginModal";
 
 function App() {
@@ -44,7 +45,8 @@ function App() {
         <Route path="/result" element={<Result />} />
       </Routes>
       <Footer/>
-      <LoginModal/>
+      <RegistrationModal/>
+      {/* <LoginModal/> */}
     </div>
   );
 }

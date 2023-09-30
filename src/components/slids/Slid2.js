@@ -1,7 +1,11 @@
 import React from "react";
 import test1 from "../../images/carousel/test5.webp";
 import "./slide.css";
+import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import { useDispatch } from 'react-redux'
+
 const Slid2 = () => {
+  const dispatch=useDispatch();
   return (
     <div>
       <div className="slid_main">
@@ -17,7 +21,7 @@ const Slid2 = () => {
               allowing you to approach the test with confidence and perform at
               your best.
             </div>
-            <div className="slid_button">Try Test For Free</div>
+            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
           </div>
         </div>
         <div className="slid_right">

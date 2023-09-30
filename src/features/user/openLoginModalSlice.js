@@ -5,7 +5,7 @@ const initialState = {
   loginModalShow: false,
  }
 
-const LoginModalSlice = createSlice({
+const loginModalSlice = createSlice({
   name: 'loginModal',
   initialState,
   reducers: {
@@ -18,5 +18,5 @@ const LoginModalSlice = createSlice({
   },
  
 })
-export const {loginShowModal,loginHideModal}=LoginModalSlice.actions ;
-export default LoginModalSlice.reducer;
+export const {loginShowModal,loginHideModal}=loginModalSlice.actions ;
+export default loginModalSlice.reducer;

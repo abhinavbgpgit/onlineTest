@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import playStoreIcon from "../../images/googleplay.png";
+import downloadAppstore from '../../images/home/appstore.png';
 import { BsFacebook, BsYoutube, BsWhatsapp } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import "./footer.css";
@@ -77,7 +78,7 @@ const Footer = () => {
           </h1>
           <figure className="flex items-center justify-between">
             <img className="w-[150px]" src={playStoreIcon} alt="" />
-            <img className="w-[150px]" src={playStoreIcon} alt="" />
+            <img className="w-[131px]" src={downloadAppstore} alt="test1"  />
           </figure>
         </div>
       </div>
