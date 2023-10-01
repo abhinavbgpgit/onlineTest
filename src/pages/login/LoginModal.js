@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { RiCloseFill } from "react-icons/ri";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { login,logout } from "../../features/user/authSlice";
 import {
   loginShowModal,
   loginHideModal,
@@ -10,18 +12,33 @@ import {
 import { registerShowModal } from "../../features/user/openRegisterModalSlice";
 
 const LoginModal = () => {
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const toggleModal = useSelector((state) => state.loginModal.loginModalShow);
+  const navigate = useNavigate();
   useEffect(() => {
-    console.log("$$$$$$$$$$$$$$$$$")
+    console.log("$$$$$$$$$$$$$$$$$");
     console.log(toggleModal);
   }, [toggleModal]);
 
   const dispatch = useDispatch();
 
+  const veryfyLogin = () => {
+    if (userName === "hello" && password === "hello") {
+      navigate("/testlandingpage");
+      dispatch(loginHideModal());
+      localStorage.setItem("loginStatus", "true")
+      dispatch(login())
+    } else {
+      setError("wrong Email or Password");
+    }
+  };
+
   return (
     <div>
       {toggleModal && (
-            <div
+        <div
           id="defaultModal"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.56)" }}
           tabindex="-1"
@@ -57,8 +74,10 @@ const LoginModal = () => {
                     <input
                       type="email"
                       id="email"
+                      value={userName}
+                      onChange={(e)=>setUserName(e.target.value)}
                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3 px-3 py-[6px]"
-                      placeholder="john.doe@company.com"
+                      placeholder="Enter email address"
                       required
                     />
                   </div>
@@ -73,19 +92,26 @@ const LoginModal = () => {
                     <input
                       type="password"
                       id="password"
+                      value={password}
+                      onChange={(e)=>setPassword(e.target.value)}
                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3 px-3 py-[6px]"
-                      placeholder="•••••••••"
+                      placeholder="Enter your password"
                       required
                     />
-                    <div className="text-right text-sm hover:text-blue-600">
+                    <div className="error flex justify-between">
+                      <div className="text-sm text-red-700">{error}</div>
+                      <div className="text-right text-sm hover:text-blue-600">
                       Forget Password?
                     </div>
+                    </div>
+                   
                   </div>
                 </div>
 
                 <button
                   className="bg-[#50A150] pt-1 pb-2 px-10 text-white font-sans tracking-tight mb-3 rounded-[30px] translate-x-[94%] md:translate-x-[129%] text-lg"
                   style={{ "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px]" }}
+                  onClick={() => veryfyLogin()}
                 >
                   Log in
                 </button>
@@ -94,7 +120,13 @@ const LoginModal = () => {
                   <div>-----------OR------------</div>
                   <div>
                     New User?{" "}
-                    <span className="text-blue-700 font-medium tracking-tighter  cursor-pointer " onClick={()=>{dispatch(loginHideModal());dispatch(registerShowModal());}}>
+                    <span
+                      className="text-blue-700 font-medium tracking-tighter  cursor-pointer "
+                      onClick={() => {
+                        dispatch(loginHideModal());
+                        dispatch(registerShowModal());
+                      }}
+                    >
                       Create Account/SignUp
                     </span>
                   </div>
@@ -103,7 +135,7 @@ const LoginModal = () => {
             </div>
           </div>
         </div>
-      )} 
+      )}
     </div>
   );
 };

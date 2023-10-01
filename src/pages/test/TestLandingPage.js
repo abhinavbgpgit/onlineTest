@@ -5,7 +5,7 @@ import './test.css'
 import TestCard from './TestCard'
 
 
-const Test = () => {
+const TestLandingPage = () => {
   console.log(subject)
   return (
     <div>
@@ -31,4 +31,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default TestLandingPage

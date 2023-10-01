@@ -6,6 +6,7 @@ import Carousel from '../../components/Carousel';
 import TestPreparation from "./TestPreparation";
 import AnyTimeTest from "./AnyTimeTest";
 const Home = () => {
+  localStorage.setItem('home',"papa")
   return (
     <div>
       <div className="corcoul">

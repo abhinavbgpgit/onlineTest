@@ -5,21 +5,29 @@ import { NavLink,useNavigate } from 'react-router-dom'
 import { Button } from './AdvancedButton'
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { logout } from '../features/user/authSlice'
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
+import {loginShowModal, loginHideModal } from '../features/user/openLoginModalSlice';
+import nitish from '../images/nitish.png'
+import { RiMore2Fill } from "react-icons/ri";
+
 const Navbar = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [toggleUserDropDown,setToggleUserDropDown]=useState(false)
   const dispatch=useDispatch();
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   const isAuthenticated=useSelector((state)=>state.auth.isAuthenticated);
+  
   console.log(isAuthenticated)
 
   const navigate=useNavigate()
   const navigateToLogin=() => {
     navigate('/login')  
   }
+
+
   return (
             
     <div className="n-wrapper">      
@@ -29,16 +37,44 @@ const Navbar = () => {
 <div className="logo_header_shadow"></div>
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 ">
   <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
-      {/* <img src={logo} class="h-12 " alt="Flowbite Logo"></img> */}
-      {/* <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Nitin Test Portal</span> */}
+  <a href="https://flowbite.com/" class="flex items-center">    
   </a>
   <div class="flex md:order-2">
-    {/* {isAuthenticated?( <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{dispatch(logout())}}>Logout</button>
-    ):(<button type="button" class="sm:hidden md:hidden xl:inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{navigateToLogin()}}>Login</button> 
-    )} */}
-      {/* <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " onClick={()=>{navigateToLogin()}}>Login</button> */}
-    <div className="download_app sm:hidden md:hidden xl:inline-block ml-5 text-white  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center mr-10 md:mr-10  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Download App</div>
+   
+     {
+      localStorage.getItem('loginStatus')==="true" ?
+       (<div className='flex items-center relative mr-10'>
+
+<div className='mr-9'> Hello, Nitish </div>
+<img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="mr-1 p-0 w-10 h-10 rounded-full cursor-pointer border border-gray-300" src={nitish} alt="User dropdown" onClick={()=>setToggleUserDropDown(!toggleUserDropDown)}></img>
+
+{
+  toggleUserDropDown && (
+    <div id="userDropdown" class=" z-10 absolute top-[50px] left-[-60px] bg-white divide-y divide-gray-200 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+    <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+      <div>Bonnie Green</div>
+      <div class="font-medium truncate">nitish@gmail.com</div>
+    </div>
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My Profile</a>
+      </li>    
+    </ul>
+    <div class="py-1">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+    </div>
+</div>
+  )
+}
+
+
+
+<RiMore2Fill className='mr-5 text-lg text-gray-500 cursor-pointer' onClick={()=>setToggleUserDropDown(!toggleUserDropDown)}/>
+       </div>)
+       :(<div>Welcome, Guest <span className=' mx-6 h-4 mt-1 w-[2px] bg-slate-600'></span><span className='ml-4 mr-10 text-blue-700 cursor-pointer font-medium' onClick={()=> dispatch(loginShowModal())}> Login</span></div>)
+     }
+     
+     
       <button
         data-collapse-toggle="navbar-default"
         type="button"

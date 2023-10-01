@@ -4,7 +4,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Navbar from "./components/Navbar";
-import Test from "./pages/test/Test";
+import TestLandingPage from "./pages/test/TestLandingPage";
 import TestStart from "./pages/test/TestStart";
 import Instrunctions from "./pages/test/Instrunctions";
 import TestOnGo from "./pages/test/TestOnGo";
@@ -37,7 +37,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/testlandingpage" element={<TestLandingPage />} />
         <Route path="/test/:id" element={<TestStart />} />
         <Route path="/instrunctions" element={<Instrunctions />} />
         <Route path="/testongo/:id" element={<TestOnGo />} />
