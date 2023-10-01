@@ -116,12 +116,12 @@ const LoginModal = () => {
                   Log in
                 </button>
 
-                <div className="text-center text-xl">
+                <div className="text-center text-lg">
                   <div>-----------OR------------</div>
                   <div>
                     New User?{" "}
                     <span
-                      className="text-blue-700 font-medium tracking-tighter  cursor-pointer "
+                      className="text-blue-700 tracking-tighter  cursor-pointer "
                       onClick={() => {
                         dispatch(loginHideModal());
                         dispatch(registerShowModal());

@@ -1,7 +1,7 @@
 import React from "react";
 import imgfamiliarity from "../../images/carousel/imgfamiliarity.png";
 import "./slide.css";
-import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import {registerShowModal} from '../../features/user/openRegisterModalSlice';
 import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom";
 
@@ -23,10 +23,10 @@ const Slid5 = () => {
   return (
     <div>
       <div className="slid_main">
-        <div className="slid_left">
+        <div className="slid_left"> 
           <div className="slid_left_box">
             <div className="what_you_will_get">Why you choose us ?</div>
-            <div className="slid_heading">Familiarity with the Test Format</div>
+            <div className="slid_heading text-left">Familiarity with the <br />Test Format</div>
             <div className="line"></div>
             <div className="slid_description">
             When students attend our online tests, they gain valuable
@@ -39,7 +39,7 @@ const Slid5 = () => {
           </div>
         </div>
         <div className="slid_right">
-          <img className="test15" src={imgfamiliarity} alt="test1"  />
+          <img style={{width:"400px"}} src={imgfamiliarity} alt="test1" height="700px" />
         </div>
       </div>
     </div>

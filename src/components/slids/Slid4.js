@@ -1,8 +1,7 @@
 import React from "react";
 import instantfeedback from "../../images/carousel/instantfeedback.png";
-import { useInstantTransition } from "framer-motion";
 import "./slide.css";
-import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
+import {registerShowModal} from '../../features/user/openRegisterModalSlice';
 import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom";
 const Slid4 = () => {
@@ -23,7 +22,7 @@ const Slid4 = () => {
   return (
     <div>
       <div className="slid_main">
-        <div className="slid_left">
+        <div className="slid_left"> 
           <div className="slid_left_box">
             <div className="what_you_will_get">Why you choose us ?</div>
             <div className="slid_heading">Identifying Weaknesses</div>
