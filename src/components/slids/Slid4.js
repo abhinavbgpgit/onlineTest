@@ -4,9 +4,22 @@ import { useInstantTransition } from "framer-motion";
 import "./slide.css";
 import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
 import { useDispatch } from 'react-redux'
-
+import { useNavigate } from "react-router-dom";
 const Slid4 = () => {
+  const navigate=useNavigate();
   const dispatch=useDispatch();
+ const redirectIfLoggedIn=() => {
+  const status=localStorage.getItem('loginStatus');
+  if(status==="true")
+  {
+    navigate('/testlandingpage');
+    }
+    else
+    {
+      dispatch(registerShowModal());
+    }
+  
+ }
   return (
     <div>
       <div className="slid_main">
@@ -23,7 +36,7 @@ const Slid4 = () => {
                 encourages students to make real-time adjustments to enhance
                 their understanding and mastery of the subject matter.
             </div>
-            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
+            <div className="slid_button" onClick={()=>redirectIfLoggedIn()}>Try Test For Free</div>
           </div>
         </div>
         <div className="slid_right">

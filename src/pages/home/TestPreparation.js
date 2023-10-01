@@ -5,9 +5,22 @@ import mockTestIcon from '../../images/prevyearmocktesticon.png'
 import detailedReportIcon from '../../images/detailedreport icon.png'
 import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
 import { useDispatch } from 'react-redux'
-
+import { useNavigate } from "react-router-dom";
 const TestPreparation = () => {
-  const dispatch = useDispatch();
+  const navigate=useNavigate();
+  const dispatch=useDispatch();
+ const redirectIfLoggedIn=() => {
+  const status=localStorage.getItem('loginStatus');
+  if(status==="true")
+  {
+    navigate('/testlandingpage');
+    }
+    else
+    {
+      dispatch(registerShowModal());
+    }
+  
+ }
   return (
     <div>
        <div className="testPreparation_main">
@@ -31,7 +44,7 @@ const TestPreparation = () => {
     <p className='text-[17px]'>Get detailed report and analysis to improve your learning and make your NEET exam simplified.</p>
   </div>
 </div>
-<div className="testPreparation_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
+<div className="testPreparation_button" onClick={()=>redirectIfLoggedIn()}>Try Test For Free</div>
 
   </div>
 

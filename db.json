@@ -131,6 +131,7 @@
       "id": 10
     }
   ],
+  
   "users": [
     {
       "id": 1,
@@ -145,6 +146,7 @@
       "email": "user2@example.com"
     }
   ],
+
   "registeredUsers": [
     {
       "id": 1,

@@ -2,10 +2,25 @@ import React from "react";
 import test1 from "../../images/carousel/higher_confidence.png";
 import "./slide.css";
 import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
-import { useDispatch } from 'react-redux'
+import { loginShowModal,loginHideModal } from "../../features/user/openLoginModalSlice";
+import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
 
 const Slid1 = () => {
+  const navigate=useNavigate();
   const dispatch=useDispatch();
+ const redirectIfLoggedIn=() => {
+  const status=localStorage.getItem('loginStatus');
+  if(status==="true")
+  {
+    navigate('/testlandingpage');
+    }
+    else
+    {
+      dispatch(registerShowModal());
+    }
+  
+ }
   return (
     <div>
       <div className="slid_main">
@@ -21,7 +36,7 @@ const Slid1 = () => {
               This helps you believe in your abilities and get better at what
               you're learning.
             </div>
-            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free </div>
+            <div className="slid_button" onClick={()=>redirectIfLoggedIn()}>Try Test For Free </div>
           </div>
         </div>
         <div className="slid_right">

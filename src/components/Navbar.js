@@ -50,18 +50,18 @@ const Navbar = () => {
 
 {
   toggleUserDropDown && (
-    <div id="userDropdown" class=" z-10 absolute top-[50px] left-[-60px] bg-white divide-y divide-gray-200 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+    <div id="userDropdown" class=" z-10 absolute top-[60px] left-[0px] bg-white divide-y divide-gray-200 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
       <div>Bonnie Green</div>
       <div class="font-medium truncate">nitish@gmail.com</div>
     </div>
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My Profile</a>
+        <a href="/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My Profile</a>
       </li>    
     </ul>
     <div class="py-1">
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+      <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white" onClick={()=>{dispatch(logout());localStorage.setItem('loginStatus',"false")}}>Sign out</a>
     </div>
 </div>
   )
@@ -71,7 +71,7 @@ const Navbar = () => {
 
 <RiMore2Fill className='mr-5 text-lg text-gray-500 cursor-pointer' onClick={()=>setToggleUserDropDown(!toggleUserDropDown)}/>
        </div>)
-       :(<div>Welcome, Guest <span className=' mx-6 h-4 mt-1 w-[2px] bg-slate-600'></span><span className='ml-4 mr-10 text-blue-700 cursor-pointer font-medium' onClick={()=> dispatch(loginShowModal())}> Login</span></div>)
+       :(<div>Welcome, Guest <span className='mx-6 h-6 w-10  bg-gray-400'>.</span><span className='ml-4 mr-10 text-blue-700 cursor-pointer font-medium' onClick={()=> dispatch(loginShowModal())}> Login</span></div>)
      }
      
      

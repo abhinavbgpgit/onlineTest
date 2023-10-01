@@ -3,9 +3,22 @@ import imgweakness from "../../images/carousel/imgweakness.png";
 import "./slide.css";
 import {registerShowModal,registerHideModal} from '../../features/user/openRegisterModalSlice';
 import { useDispatch } from 'react-redux'
-
+import { useNavigate } from "react-router-dom";
 const Slid3 = () => {
+  const navigate=useNavigate();
   const dispatch=useDispatch();
+ const redirectIfLoggedIn=() => {
+  const status=localStorage.getItem('loginStatus');
+  if(status==="true")
+  {
+    navigate('/testlandingpage');
+    }
+    else
+    {
+      dispatch(registerShowModal());
+    }
+  
+ }
   return (
     <div>
       <div className="slid_main">
@@ -22,7 +35,7 @@ const Slid3 = () => {
               learning and training to enhance their overall competence and
               performance.
             </div>
-            <div className="slid_button" onClick={()=>dispatch(registerShowModal())}>Try Test For Free</div>
+            <div className="slid_button" onClick={()=>redirectIfLoggedIn()}>Try Test For Free</div>
           </div>
         </div>
         <div className="slid_right">
