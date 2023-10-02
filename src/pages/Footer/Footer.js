@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import playStoreIcon from "../../images/googleplay.png";
 import downloadAppstore from '../../images/home/appstore.png';
 import { BsFacebook, BsYoutube, BsWhatsapp } from "react-icons/bs";
-import { AiFillTwitterCircle } from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
 import "./footer.css";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
@@ -88,12 +88,12 @@ const Footer = () => {
           <div>Privacy</div>
           <div className="hidden md:block">|</div>
           <div>Terms & Conditions</div>
-          <div className="md:ml-9 flex gap-3">
+          <div className="md:ml-9 flex items-center gap-5">
             | Follow us:
-            <BsFacebook className="text-xl ml-2" />
-            <AiFillTwitterCircle className="text-2xl" />
-            <BsYoutube className="text-2xl" />
-            <BsWhatsapp className="text-xl" />
+            <BsFacebook className="text-xl ml-2 hover:text-[#106BFF] hover:scale-[1.5] transition-all linear duration-300 cursor-pointer" />
+            <BsTwitter className="text-2xl rounded-[50%] hover:p-1 hover:text-white hover:bg-[#0B0B0B] hover:scale-[1.4] transition-all linear duration-300 cursor-pointer" />
+            <BsYoutube className="text-2xl hover:text-[#FF0808] hover:scale-[1.5] transition-all linear duration-300 cursor-pointer" />
+            <BsWhatsapp className="text-xl hover:text-[white] hover:bg-[#51CD5F] hover:scale-[1.5] transition-all linear duration-300 cursor-pointer" />
           </div>
         </div>
 
