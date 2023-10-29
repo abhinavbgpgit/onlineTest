@@ -2,8 +2,30 @@
 {
     height: 90vh;
     width: 100%;
-    background-image: linear-gradient(90deg, #ffffff , #adafaf);
+    /* background-image: linear-gradient(90deg, #ffffff , #adafaf); */
     /* background-image: url("/src/images/background.jpg"); */
+    background-color: rgb(215, 226, 250);
+}
+.hello_shadow
+{
+    font-size: 160px;
+    font-weight: 800;
+    color: rgb(178, 218, 231);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+
+.greeting_user
+{
+    font-size: 34px;
+    font-weight: 600;
+}
+.greeting_user span
+{
+    color: rgb(0, 55, 128);
+    font-weight: 800;
 }
 .test_left
 {

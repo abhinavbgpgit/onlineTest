@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
-import logo from "../images/test_logo_3.png";
+import logo from '../images/testpur_logo.png'
 import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "./AdvancedButton";
 import { useSelector } from "react-redux/es/hooks/useSelector";
@@ -31,16 +31,17 @@ const Navbar = () => {
 
   return (
     <div className="n-wrapper">
-      <div className="logo_header">
+
+      <img className="testpur" src={logo} alt="" />
+      {/* <div className="logo_header">
         <span class=" ml-10 self-center text-2xl font-bold text-white whitespace-nowrap dark:text-white">
           Nitin Test Portal
         </span>
-      </div>
-      <div className="logo_header_shadow"></div>
+      </div> */}
+      {/* <div className="logo_header_shadow"></div> */}
       <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 ">
         <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" class="flex items-center"></a>
-          <div class="flex md:order-2">
+            <div class="flex justify-between md:order-2 w-[350px]">
             {localStorage.getItem("loginStatus") === "true" ? (
               <div className="flex items-center relative mr-10">
                 <div className="mr-9"> Hello, Nitish </div>
@@ -199,7 +200,7 @@ const Navbar = () => {
                     }}
                     class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
-                    Score Boared
+                    Contact Us
                   </NavLink>
                 </li>
               </ul>

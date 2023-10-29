@@ -25,6 +25,15 @@
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
+.testpur
+{
+ z-index: 23;
+  height: 70px;
+   margin: 5px 30px;
+   position: absolute;
+   top: -3px;
+   
+}
 
 .logo_header_shadow {
   background-color: rgb(107, 151, 218);
@@ -93,7 +102,7 @@ margin-left: 650px;
   /* width: fit-content; */
 }
 
-li
+/* li
 {
   width: fit-content;
   position: relative;
@@ -109,7 +118,7 @@ li
 }
  li:hover:before {
   width: 100%;
-}
+} */
 
 .n-middle {
   font-size: 24px;

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@400;600;700;800;900&display=swap");
+
+.nav_main
+{
+    height: 80px;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.logo_image
+{
+    width: 15%;
+}
+.nav_logo
+{
+    height: 80px;
+    min-width: 200px;
+    margin-left: 30px;
+    
+}
+.menu_and_expert_section
+{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+.menu
+{
+    /* background-color: red; */
+    z-index: 20;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_item
+{
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Nunito;
+  min-width: 150px;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;   
+}
+li
+{
+  width: fit-content;
+  position: relative;  
+ 
+}
+li:hover
+{
+    color: #ffffff;
+   
+
+}
+ li::before {
+  content: "";
+  width: 0px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  /* top: 28px; */
+  transition: all 0.3s linear;
+  z-index: -10;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ li:hover:before {
+  width: 100%;
+  background-color: rgb(238, 71, 59);
+}
+.expert_section
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.expert_icon
+{
+    font-size: 30px;
+    transform: rotate(270deg);
+    background-color: rgb(236, 244, 245);
+    width: fit-content;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;    
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+}
+.expert
+{
+        display: flex;
+        margin-right: 20px;
+        /* border: 1px solid; */
+        min-width: 200px;
+          
+}
+.expert_text
+{   
+    font-family: Poppins;
+    font-weight: 600; 
+}
+.expert_number
+{
+    font-family: Poppins;
+    font-weight: 600; 
+}
+
+.login_button
+{
+
+    background-color: rgb(238, 71, 59);
+    width: fit-content;
+    padding: 7px 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login_button:hover{
+    background-color: rgb(4, 87, 4);
+}
+
+
+.bar_button
+{
+  display: none;  
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  color: gray;
+}
+.bar_button:hover
+{
+    background-color: rgb(48, 45, 45);
+    color: #ffffff;
+    
+}
+
+.hide
+{
+    display: none; 
+}
+
+  
+  /* Tablets in landscape mode (1025px to 1280px) */
+  @media screen  and (max-width: 1380px) {
+    .menu
+    {       
+        flex-direction: column;
+       
+      width: 100%;
+       
+       padding: 30px;
+
+    }
+    .menu_item
+    {
+        min-width: 100%;
+        margin: 10px;
+        font-size: 24px;
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        color: black;
+        border-radius: 30px;
+    }
+    .menu_item:hover
+    {
+        /* color: black; */
+        background-color: rgb(240, 96, 86);
+    }
+    .expert_section
+    {
+        /* display: none; */
+        margin-right: -150px;
+    }
+    .bar_button
+{
+  display: block;  
+}
+.menu_and_expert_section
+{
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+   top: 80px;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(135, 215, 233);
+   z-index: 999;
+}
+.expert_section
+{
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    padding-bottom: 30px;
+    
+}
+.expert
+{
+    margin-bottom: 30px;
+}
+  }
+
+  @media screen  and (min-width: 1280px) {
+    .hide
+{
+    display: flex; 
+}
+
+  }

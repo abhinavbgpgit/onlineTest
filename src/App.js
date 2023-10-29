@@ -14,6 +14,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 import Footer from "./pages/Footer/Footer";
 import RegistrationModal from "./pages/login/RegistrationModal";
 import LoginModal from "./pages/login/LoginModal";
+import NavBar2 from "./components/NavBar2";
 
 function App() {
   // const {isAuthenticated} = useSelector((state) => state.auth);
@@ -32,7 +33,8 @@ function App() {
  
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavBar2/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
