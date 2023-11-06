@@ -17,6 +17,7 @@ import LoginModal from "./pages/login/LoginModal";
 import NavBar2 from "./components/NavBar2";
 
 function App() {
+  //Changed something
   // const {isAuthenticated} = useSelector((state) => state.auth);
   // console.log(isAuthenticated);
   // const navigate = useNavigate();
