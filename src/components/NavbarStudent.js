@@ -1,12 +1,12 @@
 import React , {useState}from 'react'
-import './navbar2.css'
+import './navbarstudent.css'
 import logo from '../images/testpur_logo.png';
 import { FcPhone } from "react-icons/fc";
 import { FaTimes } from "react-icons/fa";
 import { FaBars} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const NavBar2 = () => {
+const NavbarStudent = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -45,4 +45,4 @@ const NavBar2 = () => {
   )
 }
 
-export default NavBar2
+export default NavbarStudent
